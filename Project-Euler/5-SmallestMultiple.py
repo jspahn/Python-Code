@@ -26,7 +26,7 @@ def findPrimes(maxValue):
                 break
         if isPrime:
             primes.append(i)
-        i +=1
+        i +=2
 
     return primes
 
