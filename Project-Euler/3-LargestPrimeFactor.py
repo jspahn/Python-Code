@@ -8,6 +8,43 @@
 # created for Python 3.x
 
 #TODO Complete Problem
-n = 600851475143
+testNumber = 600851475143
 
-def findNextPrime(lPrimes):
+lPrimes = [2,3]  # List of prime numbers
+
+# findNextPrime()
+#       Appends the next prime number to the list lPrimes
+def findNextPrime():
+    i = lPrimes[-1]+2
+    isPrime = False
+    while isPrime == False:
+        isPrime = True
+        for p in lPrimes:
+            if i % p == 0:
+                isPrime = False
+                i += 2
+                break
+    lPrimes.append(i)
+
+# findLargestPrimeFactor(n)
+#       Finds the largest prime factor of n
+def findLargestPrimeFactor(n):
+    while n % 2 == 0:
+        n /= 2
+    while n % 3 == 0:
+        n /= 2
+
+    while n != 1:
+        findNextPrime()
+        while n % lPrimes[-1] == 0:
+            n /= lPrimes[-1]
+
+    return lPrimes[-1]
+
+solution = findLargestPrimeFactor(testNumber)
+
+print("The largest Prime Factor of "+ str(testNumber) + " is"
+      + " " + str(solution))
+
+# Output:
+#   The largest Prime Factor of 600851475143 is 6857
