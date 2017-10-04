@@ -12,3 +12,13 @@
 # created for Python 3.x
 
 # TODO complete Problem
+
+# isPalindrome(n)
+#       Tests to see if n is a palindrome
+def isPalindrome(n):
+    s = str(n)
+    b_isP = True
+    for i in range(len(s)):
+        if s[i] != s[-i-1]:
+            b_isP = False
+    return b_isP
