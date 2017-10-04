@@ -7,7 +7,7 @@
 # Jeffrey Spahn
 # created for Python 3.x
 
-#TODO Complete Problem
+
 testNumber = 600851475143
 
 lPrimes = [2,3]  # List of prime numbers
