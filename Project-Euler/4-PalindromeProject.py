@@ -11,8 +11,6 @@
 # Jeffrey Spahn
 # created for Python 3.x
 
-# TODO complete Problem
-
 # isPalindrome(n)
 #       Tests to see if n is a palindrome
 def isPalindrome(n):
