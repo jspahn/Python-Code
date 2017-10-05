@@ -6,24 +6,24 @@
 # Jeffrey Spahn
 # Created for Python 3.x
 
-lPrimes = [2,3]
-sum = 5
-while lPrimes[-1] < 2000000:
-    testNumber = lPrimes[-1]
-    b_isPrime = False
-    while b_isPrime == False:
-        testNumber += 2
-        b_isPrime = True
-        for p in lPrimes:
-            if testNumber % p == 0:
-                b_isPrime = False
-                break
-    lPrimes.append(testNumber)
-    print(lPrimes[-1])
-    sum += testNumber
+import time
 
-sum -= testNumber
-print("The sum of all primes between 1 and 2,000,000 is {}".format(sum))
+Start_time = time.time()
 
-# Output:
-#       The sum of all primes between 1 and 2,000,000 is 142913828922
+# primes(n)
+#       List all primes up to n using Sieve of Eratosthenes Algorithm
+def primes(n):
+    l_primes = [2]
+    sieve = [True] * (n+1)
+    for i in range(3,n,2):
+        if sieve[i]:
+            l_primes.append(i)
+            for j in range(2,int(n/i)):
+                sieve[i*j] = False
+    return l_primes
+
+
+print(sum(primes(2000000)))
+
+print(time.time() - Start_time)
+
