@@ -10,37 +10,23 @@
 # created for Python 3.x
 
 
-# findPrimes(maxValue)
-#     returns list of all prime numbers between 1 and maxValue (inclusive)
+multipliers = [2]
+for i in range(2,20):
+    for m in multipliers:
+        if i%m == 0:
+            i = int(i)/ int(m)
+    if i !=1:
+        multipliers.append(int(i))
 
-def findPrimes(maxValue):
-    if maxValue < 2:
-        return []
-    primes = [2]
-    i = 3
-    while i < maxValue+1:
-        isPrime = True
-        for p in primes:
-            if i % p == 0:
-                isPrime = False
-                break
-        if isPrime:
-            primes.append(i)
-        i +=2
+solution = 1
+for x in multipliers:
+    solution = solution * x
 
-    return primes
+print("The smallest multiple of all numbers from 1 to 20 is: "
+      + str(solution))
 
-#   findSmallestMultiple(n)
-#       finds smallest multiple of all numbers from 1 to n
-def findSmallestMultiple(n):
-    primes = findPrimes(n)
-
-    result =1
-    for p in primes:
-        result*= p
-
-    return result
+# Output:
+#   The smallest multiple of all numbers from 1 to 20 is: 232792560
 
 
-print("The smallest multiple of all numbers from 1 to 20 is:"
-      + str(findSmallestMultiple(20)))
+
