@@ -9,7 +9,7 @@
 #                             8   5   9   3
 #
 #       That is, 3 + 7 + 4 + 9 = 23
-#       Find the maximum total from top to bottom of the tringle below:
+#       Find the maximum total from top to bottom of the triangle below:
 #                                     75
 #                                   95  64
 #                                 17  47  82
@@ -34,4 +34,17 @@
 # Created for Python 3.x
 
 # TODO Complete Problem
+
+
+# Pseudocode:
+'''
+Start at the line second from the bottom (n -1). For each number there, add the
+largest number it could go to.  These is now the new last line. repeat until you
+reach the top
+
+example: 63 becomes 63 + 62 = 125
+         66 becomes 66 + 98 = 164
+         04 becomes 04 + 98 = 102
+         68 becomes 68 + 27 = 95
+'''
 
