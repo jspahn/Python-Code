@@ -18,13 +18,44 @@
 # Jeffrey Spahn
 # Create for Python 3.x
 
-# TODO Complete Problem 14
+import time
 
 def nextCollatz(n):
     if n % 2 == 0:
-        return n/2
+        return int(n/2)
     else:
-        return 3*n+1
+        return int(3*n+1)
+
+start_time = time.time()
+n = 1000001
+pathLengths = [0] * n
+pathLengths[1] = 1
+
+for i in range(2,n):
+    if pathLengths[i] == 0:
+        count = 1
+        path = [i]
+        b_continueOnPath = True
+        while b_continueOnPath:
+            i = nextCollatz(i)
+            if i < n:
+                if pathLengths[i] != 0:
+                    b_continueOnPath = False
+                    count += pathLengths[i]
+            if b_continueOnPath:
+                path.append(i)
+                count += 1
+        for j in range(len(path)):
+            if path[j] < n:
+                pathLengths[path[j]] = count
+            count -= 1
 
 
 
+maxNumber = pathLengths.index(max(pathLengths))
+print("The Largest chain begins with #{} and is {} numbers long.".format(maxNumber,pathLengths[maxNumber]))
+print("This took {} s".format(time.time()-start_time))
+
+# Output
+#     The Largest chain begins with #837799 and is 525 numbers long.
+#     This took 3.2922286987304688 s
