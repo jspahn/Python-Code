@@ -33,9 +33,6 @@
 # Jeffrey Spahn
 # Created for Python 3.x
 
-# TODO Complete Problem
-
-
 # Pseudocode:
 '''
 Start at the line second from the bottom (n -1). For each number there, add the
