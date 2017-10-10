@@ -15,8 +15,6 @@
 #       How many Sundays fell on the first of the month during the
 #       twentieth Century?  (1 Jan 1901 to 31 Dec 2000)
 
-# Todo
-
 # Jeffrey Spahn
 # Created for Python 3.x
 
