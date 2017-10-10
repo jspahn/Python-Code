@@ -27,3 +27,14 @@
 
 # Jeffrey Spahn
 # Created for Python 3.x
+
+import time
+
+start_time = time.time()
+
+
+
+
+
+
+print("Completion time: {}".format(time.time()-start_time))
