@@ -11,14 +11,43 @@
 #
 #       What is the total of all the name scores in the file?
 
-# Todo
-
 # Jeffrey Spahn
 # Created for Python 3.x
 
 import time
 
 start_time = time.time()
+
+# word_to_score(s)
+#   Takes a word (string) and converts each letter to an integer:
+#       A = 1, B = 2, C = 3, ... Z = 26
+#   Sums the values together and returns an integer score of the
+#   word.  (Is not case sensitive)
+def word_to_score(s):
+    s = str(s).upper()
+    score = 0
+    for i in s:
+        score += ord(i)-64
+    return score
+
+
+f_names = open("22-names.txt", 'rt')
+s_names = f_names.read()
+f_names.close()
+
+l_names = s_names[1:-1].split('","')
+l_names.sort()
+
+total_score = 0
+for i in range(len(l_names)):
+    total_score += (i+1) * word_to_score(l_names[i])
+
+
+print("Total Score = {}".format(total_score))
+
+# Output
+#         Total Score = 871198282
+#         Completion time: 0.03130388259887695
 
 
 
