@@ -7,8 +7,6 @@
 #           3 + 6 + 2 + 8 + 8 + 0 + 0 = 27
 #       Find the sum of the digits in the number 100!
 
-# Todo
-
 # Jeffrey Spahn
 # Created for Python 3.x
 
@@ -16,9 +14,26 @@ import time
 
 start_time = time.time()
 
+def factorial(n):
+    result = 1
+    for i in range(1,n+1):
+        result *= i
+    return result
 
 
+n = 100
+s = str(factorial(n))
 
+digit_sum = 0
+for i in s:
+    digit_sum += int(i)
 
+print("{0}! = {1}".format(n, s))
+print("The Sum of Digits = {}".format(digit_sum))
 
 print("Completion time: {}".format(time.time()-start_time))
+
+# Output:
+#     100! = 93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
+#     The Sum of Digits = 648
+#     Completion time: 9.202957153320312e-05
