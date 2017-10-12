@@ -1,6 +1,6 @@
 
 class Player:
-    """A Player designed for the Game: Splendor"""
+    """A Player designed for the Game: SciFi Gatherer"""
     def __init__(self, name):
         self.name = name
         self.victory_points = 0
