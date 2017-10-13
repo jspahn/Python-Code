@@ -33,8 +33,26 @@ import time
 start_time = time.time()
 
 
+def index_n_digits(n):
+    """Returns the index of the first fibonacci number that is n digits long"""
+    first_num = 1
+    second_num = 1
+
+    i = 1
+    while len(str(second_num)) < n:
+        i += 2
+        first_num = first_num + second_num
+        second_num = first_num + second_num
+
+    if len(str(first_num)) == n:
+        return i
+    else:
+        return i + 1
 
 
-
-
+print("Index of First Fibonacci Number with 1000 digits: {}".format(index_n_digits(1000)))
 print("Completion time: {}".format(time.time()-start_time))
+
+# Output:
+#     Index of First Fibonacci Number with 1000 digits: 4782
+#     Completion time: 0.013983964920043945
