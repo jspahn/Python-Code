@@ -11,20 +11,37 @@
 # Jeffrey Spahn
 # created for Python 3.x
 
-sum = 2
-a1 = 1
-a2 = 2
-a3 = a1 + a2
+import time
 
-while a3 < 4000000:
-    a1 = a2
-    a2 = a3
-    a3 = a1+a2
+def even_fib_sum(n):
+    """Finds the sum of all even numbered Fibonacci numbers
+        below the value of n"""
 
-    if a3 % 2 == 0:
-        sum += a3
+    sum_of_evens = 2
+    a1 = 1
+    a2 = 2
+    a3 = a1 + a2
 
-print("The sum of all even Fibonacci numbers below 4,000,000 is: " + str(sum))
+    while a3 < n:
+        a1 = a2
+        a2 = a3
+        a3 = a1 + a2
 
-# Output: The sum of all even Fibonacci numbers below 4,000,000 is: 4613732
+        if a3 % 2 == 0:
+            sum_of_evens += a3
+
+    return sum_of_evens
+
+
+
+if __name__ == "__main__":
+    start_time = time.time()
+    n = 4000000     # The upper limit on the value of Fibonacci Numbers we will consider
+
+    solution = even_fib_sum(n)
+    print("The Sum of all Even Fibonacci Numbers below {0} is: {1}".format(n,solution))
+    print("Completion time: {}".format(time.time() - start_time))
+    # Output:
+    #      The Sum of all Even Fibonacci Numbers below 4000000 is: 4613732
+    #      Completion time: 2.2172927856445312e-05
 
