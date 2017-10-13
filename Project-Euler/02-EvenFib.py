@@ -33,7 +33,9 @@ def even_fib_sum(n):
     return sum_of_evens
 
 
-
+#------------------------------------------------------------
+#  Main
+#------------------------------------------------------------
 if __name__ == "__main__":
     start_time = time.time()
     n = 4000000     # The upper limit on the value of Fibonacci Numbers we will consider

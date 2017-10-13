@@ -19,7 +19,9 @@ def sum_of_multiples(n, divisors):
             result += x
     return result
 
-
+#------------------------------------------------------------
+#  Main
+#------------------------------------------------------------
 if __name__ == "__main__":
     start_time = time.time()
 
