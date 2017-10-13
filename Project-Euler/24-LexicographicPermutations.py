@@ -73,7 +73,9 @@ def get_lex_factorial_method(digits, n):
 
     return(solution)
 
-
+#------------------------------------------------------------
+#  Main
+#------------------------------------------------------------
 if __name__ == "__main__":
     # print("Performing Calculation using Brute Force Method")
     # start_time = time.time()
