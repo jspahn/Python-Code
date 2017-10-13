@@ -35,7 +35,8 @@ def get_lexicographic_order(digits):
     return sorted([a for a in itertools.permutations(digits,len(digits))])
 
 def get_lex_brute(digits, n):
-    """Gets the 'n'th permutation in lexicographic order"""
+    """Gets the 'n'th permutation in lexicographic order
+            n starts at 1"""
     lexi = get_lexicographic_order(digits)
 
     # return lexi[n-1]
