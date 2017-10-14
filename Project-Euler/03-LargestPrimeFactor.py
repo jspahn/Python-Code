@@ -7,6 +7,9 @@
 # Jeffrey Spahn
 # created for Python 3.x
 
+import time
+
+start_time = time.time()
 
 testNumber = 600851475143
 
@@ -45,6 +48,8 @@ solution = findLargestPrimeFactor(testNumber)
 
 print("The largest Prime Factor of "+ str(testNumber) + " is"
       + " " + str(solution))
+
+print("Completion time: {}".format(time.time() - start_time))
 
 # Output:
 #   The largest Prime Factor of 600851475143 is 6857
