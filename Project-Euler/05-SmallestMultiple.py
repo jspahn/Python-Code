@@ -9,6 +9,7 @@
 # Jeffrey Spahn
 # created for Python 3.x
 
+import time
 
 multipliers = [2]
 for i in range(2,20):
@@ -24,6 +25,15 @@ for x in multipliers:
 
 print("The smallest multiple of all numbers from 1 to 20 is: "
       + str(solution))
+
+
+#------------------------------------------------------------
+#  Main
+#------------------------------------------------------------
+if __name__ == "__main__":
+    start_time = time.time()
+
+
 
 # Output:
 #   The smallest multiple of all numbers from 1 to 20 is: 232792560
