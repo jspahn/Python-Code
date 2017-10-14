@@ -13,6 +13,7 @@
 
 import time
 
+
 def even_fib_sum(n):
     """Finds the sum of all even numbered Fibonacci numbers
         below the value of n"""
