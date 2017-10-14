@@ -1,6 +1,6 @@
 
 class Card:
-    ''' Represents a single card in the game: Splendor.
+    ''' Represents a single card in the game: SciFi Gatherer.
     These are the cards that the players will purchase throughout the game.'''
     def __init__(self,level, color, cost, victory_points):
         '''

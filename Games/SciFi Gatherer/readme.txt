@@ -1,4 +1,5 @@
-This is a python 3.x implementation of the board game Splendor.
+This is a scifi implementation of the board game Splendor.
+Using Python 3.x
 
 TODO:
     Cards
