@@ -50,7 +50,8 @@ digitLengths = {
 }
 
 
-def getLetterCount(i):
+def get_letter_count(i):
+    """Returns the number of letters needed to write out the number using British English"""
     letter_count = 0
 
     if i // 1000 != 0:
@@ -72,16 +73,20 @@ def getLetterCount(i):
     return letter_count
 
 
-total_letter_count = 0
+#------------------------------------------------------------
+#  Main
+#------------------------------------------------------------
+if __name__ == "__main__":
+    start_time = time.time()
 
+    total_letter_count = 0
 
+    for i in range(1001):
+        total_letter_count += get_letter_count(i)
 
-for i in range(1001):
-    total_letter_count += getLetterCount(i)
+    print("The total letter count of all numbers between 1 and 1000 (inclusive) is: {}".format(total_letter_count))
+    print("    Completion time: {}".format(time.time() - start_time))
 
-print("The total letter count of all numbers between 1 and 1000 (inclusive) is: {}".format(total_letter_count))
-print("Time: {}".format(time.time() - startTime))
-
-# Output
-#     The total letter count of all numbers between 1 and 1000 (inclusive) is: 21124
-#     Time: 0.0011241436004638672
+    # Output
+    #     The total letter count of all numbers between 1 and 1000 (inclusive) is: 21124
+    #         Completion time: 0.001583099365234375
