@@ -32,19 +32,28 @@
 #       nCr (40,20) = 40!/(20!*20!)
 import time
 
+
 def factorial(n):
+    """Performs a factorial calculation on n: n!"""
     result = 1
     for i in range(1,n+1):
         result *= i
     return result
 
-def binCoef(n,r):
+
+def bin_coef(n,r):
+    """returns the binary coefficient of nCr"""
     return factorial(n)/ (factorial(r)* factorial(n-r))
 
-startTime = time.time()
-print("The number of paths in a 20x20 grid is: {}".format(binCoef(40,20)))
-print("Time: {}".format(time.time() - startTime))
 
-# Output:
-#     The number of paths in a 20x20 grid is: 137846528820.0
-#     Time: 0.015624046325683594
+#------------------------------------------------------------
+#  Main
+#------------------------------------------------------------
+if __name__ == "__main__":
+    start_time = time.time()
+    print("The number of paths in a 20x20 grid is: {}".format(bin_coef(40,20)))
+    print("    Completion time: {}".format(time.time() - start_time))
+
+    # Output:
+    #     The number of paths in a 20x20 grid is: 137846528820.0
+    #     Completion time: 3.719329833984375e-05
