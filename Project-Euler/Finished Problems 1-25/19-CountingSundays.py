@@ -56,9 +56,9 @@ def is_leap_year(n):
         return False
 
 
-#------------------------------------------------------------
+# ------------------------------------------------------------
 #  Main
-#------------------------------------------------------------
+# ------------------------------------------------------------
 if __name__ == "__main__":
     start_time = time.time()
 
@@ -73,8 +73,6 @@ if __name__ == "__main__":
                 day_index = day_index % 7
                 if day_index == 0 and year > 0:
                         sunday_count += 1
-
-
 
     print("The total number of months in the 20th Century that started on a Sunday are {}".format(sunday_count))
     print("Completion time: {}".format(time.time()-start_time))
