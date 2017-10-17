@@ -20,14 +20,16 @@
 # Created for Python 3.x
 
 # triangle numbers  y = (x^2 + x)/2 = (x)(x+1)/ 2
-#             By looking at this, we know triangle numbers are not prime.
 #           We can find triangle numbers by finding x and x+1
 #           x and x+1 must have a unique set of prime numbers in their prime factorization.
-#
+#           By decomposing x and x+1 into their factors, we can calculate the number
+#               of factors x*(x+1)/2 must have
+
 import time
 
 
 def factorize(n):
+    """Finds the prime factorization of n, returning the exponent values as a list"""
     l_factors = []
     count = 0
     divisor = 2
@@ -52,25 +54,29 @@ def numberOfDivisors_v2(l_degeneracy):
         result = result * (p+1)
     return result
 
-start_time = time.time()
-i = 5
-b_keepLooking = True
-while b_keepLooking:
-    number = factorize(i)
-    # print("{} : {}".format(i,number))
-    number.extend((factorize(int((i+1)/2))))
-    number = list(filter((0).__ne__, number))
-    n_div = numberOfDivisors_v2(number)
-    # print("Testing #{}".format(i))
-    if n_div > 500:
-        b_keepLooking = False
-        print("The Triangle Number ({}) : {} is the first number with over 500 Divisors".format(i,i*(i+1)/2))
-        print("It has {} divisors".format(n_div))
-    i +=2
 
-print("Completion time: {} ".format(time.time() - start_time))
+#------------------------------------------------------------
+#  Main
+#------------------------------------------------------------
+if __name__ == "__main__":
+    start_time = time.time()
 
-# Output:
-#     The Triangle Number (12375) : 76576500.0 is the first number with over 500 Divisors
-#     It has 576 divisors
-#     Completion time: 2.3457491397857666
+    i = 5         # We assume i is odd and i+1 is even without loss of generality.
+    b_keepLooking = True
+    while b_keepLooking:
+        number = factorize(i)
+        number.extend((factorize(int((i+1)/2))))
+        n_div = numberOfDivisors_v2(number)
+
+        if n_div > 500:
+            b_keepLooking = False
+            print("The Triangle Number ({}) : {} is the first number with over 500 Divisors".format(i,i*(i+1)/2))
+            print("It has {} divisors".format(n_div))
+        i +=2
+
+    print("Completion time: {} ".format(time.time() - start_time))
+
+    # Output:
+    #     The Triangle Number (12375) : 76576500.0 is the first number with over 500 Divisors
+    #     It has 576 divisors
+    #     Completion time: 2.3457491397857666
