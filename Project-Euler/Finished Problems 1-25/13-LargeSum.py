@@ -105,6 +105,8 @@
 # Jeffrey Spahn
 # Created for Python 3.x
 
+import time
+
 s = '''37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
 74324986199524741059474233309513058123726617309629
@@ -206,11 +208,21 @@ s = '''37107287533902102798797998220837590246510135740250
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690'''
 
-n = s.split()
-print(len(n))
 
-solution = 0
-for i in n:
-    solution += int(i)
+#------------------------------------------------------------
+#  Main
+#------------------------------------------------------------
+if __name__ == "__main__":
+    start_time = time.time()
 
-print(str(solution)[:10])
+    n = s.split()
+    solution = 0
+    for i in n:
+        solution += int(i)
+
+    print("The first 10 digits of the sum of the one hundred 50-digit numbers is: {}".format(str(solution)[:10]))
+    print("    Completion time: {}".format(time.time() - start_time))
+
+    # Output:
+    #     The first 10 digits of the sum of the one hundred 50-digit numbers is: 5537376230
+    #         Completion time: 7.915496826171875e-05
