@@ -33,20 +33,12 @@
 # Jeffrey Spahn
 # Created for Python 3.x
 
-# Pseudocode:
-'''
-Start at the line second from the bottom (n -1). For each number there, add the
-largest number it could go to.  These is now the new last line. repeat until you
-reach the top
 
-example: 63 becomes 63 + 62 = 125
-         66 becomes 66 + 98 = 164
-         04 becomes 04 + 98 = 102
-         68 becomes 68 + 27 = 95
-'''
+
 
 import time
 startTime = time.time()
+
 
 s_triangle = '''75
 95 64
@@ -64,13 +56,12 @@ s_triangle = '''75
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23'''
 
-# toIntTriangle(args_Triangle)
-#       returns the triangle array in integer form
-def toIntTriangle(args_Triangle):
-    args_Triangle = args_Triangle.split("\n")
+def to_int_triangle(args_triangle):
+    """returns the triangle array in integer form"""
+    args_triangle = args_triangle.split("\n")
 
     n_triangle = []
-    for s in args_Triangle:
+    for s in args_triangle:
         s_level = s.split(" ")
         n_level = []
         for value in s_level:
@@ -79,26 +70,40 @@ def toIntTriangle(args_Triangle):
     return n_triangle
 
 
-int_triangle = toIntTriangle(s_triangle)
-n = len(int_triangle)   # Height of Triangle
+def calculate_max_sum(int_triangle, triangle_height):
+    """
+    Start at the line second from the bottom (n -1). For each number there, add the
+    largest number it could go to.  These is now the new last line. repeat until you
+    reach the top
 
-# for row in int_triangle:
-#     print(row)
+    example: 63 becomes 63 + 62 = 125
+             66 becomes 66 + 98 = 164
+             04 becomes 04 + 98 = 102
+             68 becomes 68 + 27 = 95
+    """
+    for i in range(triangle_height - 2, -1, -1):
+        for j in range(i + 1):
+            if int_triangle[i + 1][j] > int_triangle[i + 1][j + 1]:
+                int_triangle[i][j] = int_triangle[i][j] + int_triangle[i + 1][j]
+            else:
+                int_triangle[i][j] = int_triangle[i][j] + int_triangle[i + 1][j + 1]
+    return int_triangle[0][0]
 
-for i in range(n-2,-1,-1):
-    for j in range(i+1):
-        if int_triangle[i+1][j] > int_triangle[i+1][j+1]:
-            int_triangle[i][j] = int_triangle[i][j] + int_triangle[i+1][j]
-        else:
-            int_triangle[i][j] = int_triangle[i][j] + int_triangle[i+1][j+1]
 
+#------------------------------------------------------------
+#  Main
+#------------------------------------------------------------
+if __name__ == "__main__":
+    start_time = time.time()
 
-# for row in int_triangle:
-#     print(row)
+    int_triangle = to_int_triangle(s_triangle)
+    triangle_height = len(int_triangle)   # Height of Triangle
 
-print("The Maximum total from the top to the bottom is: {}".format(int_triangle[0][0]))
-print("Time: {}".format(time.time() - startTime))
+    max_sum = calculate_max_sum(int_triangle,triangle_height)
 
-# Output:
-#       The Maximum total from the top to the bottom is: 1074
-#       Time: 0.0
+    print("The Maximum total from the top to the bottom is: {}".format(max_sum))
+    print("    Completion time: {}".format(time.time() - start_time))
+
+    # Output:
+    #       The Maximum total from the top to the bottom is: 1074
+    #           Completion time: 0.00012183189392089844
