@@ -25,12 +25,12 @@ import time
 import itertools
 
 
-
-#------------------------------------------------------------
+# ------------------------------------------------------------
 #  Brute Force Methods
-#------------------------------------------------------------
+# ------------------------------------------------------------
 def get_lexicographic_order(digits):
     return sorted([a for a in itertools.permutations(digits,len(digits))])
+
 
 def get_lex_brute(digits, n):
     """Gets the 'n'th permutation in lexicographic order
@@ -45,10 +45,9 @@ def get_lex_brute(digits, n):
     return result
 
 
-
-#------------------------------------------------------------
+# ------------------------------------------------------------
 #  Factorial Methods
-#------------------------------------------------------------
+# ------------------------------------------------------------
 def get_lex_factorial_method(digits, n):
     digits = list(digits)
     lexicographic_position = n - 1  # Ordering starts at 0
@@ -66,21 +65,21 @@ def get_lex_factorial_method(digits, n):
         digits.pop(index)
         lexicographic_position = lexicographic_position - (index * factorials[digit_position])
 
-
     solution += str(digits[0])
-
     return(solution)
 
-#------------------------------------------------------------
+
+# ------------------------------------------------------------
 #  Main
-#------------------------------------------------------------
+# ------------------------------------------------------------
 if __name__ == "__main__":
-    # print("Performing Calculation using Brute Force Method")
-    # start_time = time.time()
-    # lexicographic_position = 1000000                      # Starts at 1
-    # lexi = get_lex_brute("0123456789", lexicographic_position)
-    # print("Lexicographic #{} : {}".format(lexicographic_position, lexi))
-    # print("Completion time: {}".format(time.time() - start_time))
+
+    print("Performing Calculation using Brute Force Method")
+    start_time = time.time()
+    lexicographic_position = 1000000                      # Starts at 1
+    lexi = get_lex_brute("0123456789", lexicographic_position)
+    print("Lexicographic #{} : {}".format(lexicographic_position, lexi))
+    print("Completion time: {}".format(time.time() - start_time))
 
     # Output:
     #      Performing Calculation using Brute Force Method
