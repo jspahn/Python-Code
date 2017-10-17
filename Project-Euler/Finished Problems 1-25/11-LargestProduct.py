@@ -32,8 +32,6 @@ start_time = time.time()
 def find_largest_product(grid, width, height):
     """Looks through the grid of numbers and finds the 4 adjacent numbers
         that multiply to the largest value."""
-
-
     index = 0
     direction = ""
     max_value = 0
