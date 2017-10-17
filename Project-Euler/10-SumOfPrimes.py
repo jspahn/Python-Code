@@ -18,8 +18,9 @@ def primes(n):
     for i in range(3,n,2):
         if sieve[i]:
             l_primes.append(i)
-            for j in range(2,int(n/i)):
-                sieve[i*j] = False
+            for j in range(2,int(n/i)+1):
+                if i*j<=n:
+                    sieve[i*j] = False
     return l_primes
 
 
