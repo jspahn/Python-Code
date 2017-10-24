@@ -1,4 +1,3 @@
-
 class Player:
     """A Player designed for the Game: SciFi Gatherer"""
     def __init__(self, name):
@@ -28,6 +27,10 @@ class Player:
             self.victory_points += tab_card.victoryPoints
         for tab_noble in self.nobles:
             self.victory_points += tab_noble.victoryPoints
+
+    def perform_main_action(self):
+        print("Hello, My name is {}".format(self.name))
+        return
 
 
 

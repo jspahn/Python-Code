@@ -16,3 +16,6 @@ class Card:
             - Integer value representing the number of victory points the card is worth for owning
         '''
         self.level = level
+        self.color = color
+        self.cost = cost
+        self.victory_points = victory_points

@@ -1,108 +1,108 @@
 Level, Name, Type, Victory Points, Cost
-1,Dark Matter,0, {"Dark Matter":0, "Water": 0, "Green":2, "Antimatter":1, "White":0}
-1,Dark Matter,0, {"Dark Matter":0, "Water": 0, "Green":3, "Antimatter":0, "White":0}
-1,Dark Matter,0, {"Dark Matter":0, "Water": 0, "Green":2, "Antimatter":0, "White":2}
-1,Dark Matter,0, {"Dark Matter":0, "Water": 1, "Green":1, "Antimatter":1, "White":1}
-1,Dark Matter,1, {"Dark Matter":0, "Water": 4, "Green":0, "Antimatter":0, "White":0}
-1,Dark Matter,0, {"Dark Matter":1, "Water": 0, "Green":1, "Antimatter":3, "White":0}
-1,Dark Matter,0, {"Dark Matter":0, "Water": 2, "Green":0, "Antimatter":1, "White":2}
-1,Dark Matter,0, {"Dark Matter":0, "Water": 2, "Green":1, "Antimatter":1, "White":1}
+1,Dark Matter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:2,Antimatter Cost:1,White Cost:0
+1,Dark Matter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:3,Antimatter Cost:0,White Cost:0
+1,Dark Matter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:2,Antimatter Cost:0,White Cost:2
+1,Dark Matter,0,Dark Matter Cost:0,Water Cost:1,Green Cost:1,Antimatter Cost:1,White Cost:1
+1,Dark Matter,1,Dark Matter Cost:0,Water Cost:4,Green Cost:0,Antimatter Cost:0,White Cost:0
+1,Dark Matter,0,Dark Matter Cost:1,Water Cost:0,Green Cost:1,Antimatter Cost:3,White Cost:0
+1,Dark Matter,0,Dark Matter Cost:0,Water Cost:2,Green Cost:0,Antimatter Cost:1,White Cost:2
+1,Dark Matter,0,Dark Matter Cost:0,Water Cost:2,Green Cost:1,Antimatter Cost:1,White Cost:1
 
-1,Water,0, {"Dark Matter":2, "Water": 0, "Green":0, "Antimatter":0, "White":1}
-1,Water,0, {"Dark Matter":3, "Water": 0, "Green":0, "Antimatter":0, "White":0}
-1,Water,0, {"Dark Matter":2, "Water": 0, "Green":2, "Antimatter":0, "White":0}
-1,Water,0, {"Dark Matter":1, "Water": 0, "Green":1, "Antimatter":1, "White":1}
-1,Water,1, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":4, "White":0}
-1,Water,0, {"Dark Matter":0, "Water": 1, "Green":3, "Antimatter":1, "White":0}
-1,Water,0, {"Dark Matter":0, "Water": 0, "Green":2, "Antimatter":2, "White":1}
-1,Water,0, {"Dark Matter":1, "Water": 0, "Green":1, "Antimatter":2, "White":1}
-
-
-1,Green,0, {"Dark Matter":0, "Water": 1, "Green":0, "Antimatter":0, "White":2}
-1,Green,0, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":3, "White":0}
-1,Green,0, {"Dark Matter":0, "Water": 2, "Green":0, "Antimatter":2, "White":0}
-1,Green,0, {"Dark Matter":1, "Water": 1, "Green":0, "Antimatter":1, "White":1}
-1,Green,1, {"Dark Matter":4, "Water": 0, "Green":0, "Antimatter":0, "White":0}
-1,Green,0, {"Dark Matter":0, "Water": 3, "Green":1, "Antimatter":0, "White":1}
-1,Green,0, {"Dark Matter":2, "Water": 1, "Green":0, "Antimatter":2, "White":0}
-1,Green,0, {"Dark Matter":2, "Water": 1, "Green":0, "Antimatter":1, "White":1}
-
-1,Antimatter,0, {"Dark Matter":0, "Water": 2, "Green":1, "Antimatter":0, "White":0}
-1,Antimatter,0, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":0, "White":3}
-1,Antimatter,0, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":2, "White":2}
-1,Antimatter,0, {"Dark Matter":1, "Water": 1, "Green":1, "Antimatter":0, "White":1}
-1,Antimatter,1, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":0, "White":4}
-1,Antimatter,0, {"Dark Matter":3, "Water": 0, "Green":0, "Antimatter":1, "White":1}
-1,Antimatter,0, {"Dark Matter":2, "Water": 0, "Green":1, "Antimatter":0, "White":2}
-1,Antimatter,0, {"Dark Matter":1, "Water": 1, "Green":1, "Antimatter":0, "White":2}
-
-1,White,0, {"Dark Matter":1, "Water": 0, "Green":0, "Antimatter":2, "White":0}
-1,White,0, {"Dark Matter":0, "Water": 3, "Green":0, "Antimatter":0, "White":0}
-1,White,0, {"Dark Matter":2, "Water": 2, "Green":0, "Antimatter":0, "White":0}
-1,White,0, {"Dark Matter":1, "Water": 1, "Green":1, "Antimatter":1, "White":0}
-1,White,1, {"Dark Matter":0, "Water": 0, "Green":4, "Antimatter":0, "White":0}
-1,White,0, {"Dark Matter":1, "Water": 1, "Green":0, "Antimatter":0, "White":3}
-1,White,0, {"Dark Matter":1, "Water": 2, "Green":2, "Antimatter":0, "White":0}
-1,White,0, {"Dark Matter":1, "Water": 1, "Green":2, "Antimatter":1, "White":0}
+1,Water,0,Dark Matter Cost:2,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:1
+1,Water,0,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
+1,Water,0,Dark Matter Cost:2,Water Cost:0,Green Cost:2,Antimatter Cost:0,White Cost:0
+1,Water,0,Dark Matter Cost:1,Water Cost:0,Green Cost:1,Antimatter Cost:1,White Cost:1
+1,Water,1,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:4,White Cost:0
+1,Water,0,Dark Matter Cost:0,Water Cost:1,Green Cost:3,Antimatter Cost:1,White Cost:0
+1,Water,0,Dark Matter Cost:0,Water Cost:0,Green Cost:2,Antimatter Cost:2,White Cost:1
+1,Water,0,Dark Matter Cost:1,Water Cost:0,Green Cost:1,Antimatter Cost:2,White Cost:1
 
 
-2,Dark Matter,2, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":0, "White":5}
-2,Dark Matter,3, {"Dark Matter":6, "Water": 0, "Green":0, "Antimatter":0, "White":0}
-2,Dark Matter,1, {"Dark Matter":0, "Water": 2, "Green":2, "Antimatter":0, "White":3}
-2,Dark Matter,2, {"Dark Matter":0, "Water": 1, "Green":4, "Antimatter":2, "White":0}
-2,Dark Matter,1, {"Dark Matter":2, "Water": 0, "Green":3, "Antimatter":0, "White":3}
-2,Dark Matter,2, {"Dark Matter":0, "Water": 0, "Green":5, "Antimatter":3, "White":0}
+1,Green,0,Dark Matter Cost:0,Water Cost:1,Green Cost:0,Antimatter Cost:0,White Cost:2
+1,Green,0,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:3,White Cost:0
+1,Green,0,Dark Matter Cost:0,Water Cost:2,Green Cost:0,Antimatter Cost:2,White Cost:0
+1,Green,0,Dark Matter Cost:1,Water Cost:1,Green Cost:0,Antimatter Cost:1,White Cost:1
+1,Green,1,Dark Matter Cost:4,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
+1,Green,0,Dark Matter Cost:0,Water Cost:3,Green Cost:1,Antimatter Cost:0,White Cost:1
+1,Green,0,Dark Matter Cost:2,Water Cost:1,Green Cost:0,Antimatter Cost:2,White Cost:0
+1,Green,0,Dark Matter Cost:2,Water Cost:1,Green Cost:0,Antimatter Cost:1,White Cost:1
 
-2,Water,2, {"Dark Matter":0, "Water": 5, "Green":0, "Antimatter":0, "White":0}
-2,Water,3, {"Dark Matter":0, "Water": 6, "Green":0, "Antimatter":0, "White":0}
-2,Water,1, {"Dark Matter":0, "Water": 2, "Green":2, "Antimatter":3, "White":0}
-2,Water,2, {"Dark Matter":4, "Water": 0, "Green":0, "Antimatter":1, "White":2}
-2,Water,1, {"Dark Matter":3, "Water": 2, "Green":3, "Antimatter":0, "White":0}
-2,Water,2, {"Dark Matter":0, "Water": 3, "Green":0, "Antimatter":0, "White":5}
+1,Antimatter,0,Dark Matter Cost:0,Water Cost:2,Green Cost:1,Antimatter Cost:0,White Cost:0
+1,Antimatter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:3
+1,Antimatter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:2,White Cost:2
+1,Antimatter,0,Dark Matter Cost:1,Water Cost:1,Green Cost:1,Antimatter Cost:0,White Cost:1
+1,Antimatter,1,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:4
+1,Antimatter,0,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:1,White Cost:1
+1,Antimatter,0,Dark Matter Cost:2,Water Cost:0,Green Cost:1,Antimatter Cost:0,White Cost:2
+1,Antimatter,0,Dark Matter Cost:1,Water Cost:1,Green Cost:1,Antimatter Cost:0,White Cost:2
 
-2,Green,2, {"Dark Matter":0, "Water": 0, "Green":5, "Antimatter":0, "White":0}
-2,Green,3, {"Dark Matter":0, "Water": 0, "Green":6, "Antimatter":0, "White":0}
-2,Green,1, {"Dark Matter":2, "Water": 3, "Green":0, "Antimatter":0, "White":2}
-2,Green,2, {"Dark Matter":1, "Water": 2, "Green":0, "Antimatter":0, "White":4}
-2,Green,1, {"Dark Matter":0, "Water": 0, "Green":2, "Antimatter":3, "White":3}
-2,Green,2, {"Dark Matter":0, "Water": 5, "Green":3, "Antimatter":0, "White":0}
-
-2,Antimatter,2, {"Dark Matter":5, "Water": 0, "Green":0, "Antimatter":0, "White":0}
-2,Antimatter,3, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":6, "White":0}
-2,Antimatter,1, {"Dark Matter":3, "Water": 0, "Green":0, "Antimatter":2, "White":2}
-2,Antimatter,2, {"Dark Matter":0, "Water": 4, "Green":2, "Antimatter":0, "White":1}
-2,Antimatter,1, {"Dark Matter":3, "Water": 3, "Green":0, "Antimatter":2, "White":0}
-2,Antimatter,2, {"Dark Matter":5, "Water": 0, "Green":0, "Antimatter":0, "White":3}
-
-2,White,2, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":5, "White":0}
-2,White,3, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":0, "White":6}
-2,White,1, {"Dark Matter":2, "Water": 0, "Green":3, "Antimatter":2, "White":0}
-2,White,2, {"Dark Matter":2, "Water": 0, "Green":1, "Antimatter":4, "White":0}
-2,White,1, {"Dark Matter":0, "Water": 3, "Green":0, "Antimatter":3, "White":2}
-2,White,2, {"Dark Matter":3, "Water": 0, "Green":0, "Antimatter":5, "White":0}
+1,White,0,Dark Matter Cost:1,Water Cost:0,Green Cost:0,Antimatter Cost:2,White Cost:0
+1,White,0,Dark Matter Cost:0,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:0
+1,White,0,Dark Matter Cost:2,Water Cost:2,Green Cost:0,Antimatter Cost:0,White Cost:0
+1,White,0,Dark Matter Cost:1,Water Cost:1,Green Cost:1,Antimatter Cost:1,White Cost:0
+1,White,1,Dark Matter Cost:0,Water Cost:0,Green Cost:4,Antimatter Cost:0,White Cost:0
+1,White,0,Dark Matter Cost:1,Water Cost:1,Green Cost:0,Antimatter Cost:0,White Cost:3
+1,White,0,Dark Matter Cost:1,Water Cost:2,Green Cost:2,Antimatter Cost:0,White Cost:0
+1,White,0,Dark Matter Cost:1,Water Cost:1,Green Cost:2,Antimatter Cost:1,White Cost:0
 
 
-3,Dark Matter,4, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":7, "White":0}
-3,Dark Matter,5, {"Dark Matter":3, "Water": 0, "Green":0, "Antimatter":7, "White":0}
-3,Dark Matter,4, {"Dark Matter":3, "Water": 0, "Green":3, "Antimatter":6, "White":0}
-3,Dark Matter,3, {"Dark Matter":0, "Water": 3, "Green":5, "Antimatter":3, "White":3}
+2,Dark Matter,2,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:5
+2,Dark Matter,3,Dark Matter Cost:6,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
+2,Dark Matter,1,Dark Matter Cost:0,Water Cost:2,Green Cost:2,Antimatter Cost:0,White Cost:3
+2,Dark Matter,2,Dark Matter Cost:0,Water Cost:1,Green Cost:4,Antimatter Cost:2,White Cost:0
+2,Dark Matter,1,Dark Matter Cost:2,Water Cost:0,Green Cost:3,Antimatter Cost:0,White Cost:3
+2,Dark Matter,2,Dark Matter Cost:0,Water Cost:0,Green Cost:5,Antimatter Cost:3,White Cost:0
 
-3,Water,4, {"Dark Matter":0, "Water": 0, "Green":0, "Antimatter":0, "White":7}
-3,Water,5, {"Dark Matter":0, "Water": 3, "Green":0, "Antimatter":0, "White":7}
-3,Water,4, {"Dark Matter":3, "Water": 3, "Green":0, "Antimatter":0, "White":6}
-3,Water,3, {"Dark Matter":5, "Water": 0, "Green":3, "Antimatter":3, "White":3}
+2,Water,2,Dark Matter Cost:0,Water Cost:5,Green Cost:0,Antimatter Cost:0,White Cost:0
+2,Water,3,Dark Matter Cost:0,Water Cost:6,Green Cost:0,Antimatter Cost:0,White Cost:0
+2,Water,1,Dark Matter Cost:0,Water Cost:2,Green Cost:2,Antimatter Cost:3,White Cost:0
+2,Water,2,Dark Matter Cost:4,Water Cost:0,Green Cost:0,Antimatter Cost:1,White Cost:2
+2,Water,1,Dark Matter Cost:3,Water Cost:2,Green Cost:3,Antimatter Cost:0,White Cost:0
+2,Water,2,Dark Matter Cost:0,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:5
 
-3,Green,4, {"Dark Matter":0, "Water": 7, "Green":0, "Antimatter":0, "White":0}
-3,Green,5, {"Dark Matter":0, "Water": 7, "Green":3, "Antimatter":0, "White":0}
-3,Green,4, {"Dark Matter":0, "Water": 6, "Green":3, "Antimatter":0, "White":3}
-3,Green,3, {"Dark Matter":3, "Water": 3, "Green":0, "Antimatter":3, "White":5}
+2,Green,2,Dark Matter Cost:0,Water Cost:0,Green Cost:5,Antimatter Cost:0,White Cost:0
+2,Green,3,Dark Matter Cost:0,Water Cost:0,Green Cost:6,Antimatter Cost:0,White Cost:0
+2,Green,1,Dark Matter Cost:2,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:2
+2,Green,2,Dark Matter Cost:1,Water Cost:2,Green Cost:0,Antimatter Cost:0,White Cost:4
+2,Green,1,Dark Matter Cost:0,Water Cost:0,Green Cost:2,Antimatter Cost:3,White Cost:3
+2,Green,2,Dark Matter Cost:0,Water Cost:5,Green Cost:3,Antimatter Cost:0,White Cost:0
 
-3,Antimatter,4, {"Dark Matter":0, "Water": 0, "Green":7, "Antimatter":0, "White":0}
-3,Antimatter,5, {"Dark Matter":0, "Water": 0, "Green":7, "Antimatter":3, "White":0}
-3,Antimatter,4, {"Dark Matter":0, "Water": 3, "Green":6, "Antimatter":3, "White":0}
-3,Antimatter,3, {"Dark Matter":3, "Water": 5, "Green":3, "Antimatter":0, "White":3}
+2,Antimatter,2,Dark Matter Cost:5,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
+2,Antimatter,3,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:6,White Cost:0
+2,Antimatter,1,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:2,White Cost:2
+2,Antimatter,2,Dark Matter Cost:0,Water Cost:4,Green Cost:2,Antimatter Cost:0,White Cost:1
+2,Antimatter,1,Dark Matter Cost:3,Water Cost:3,Green Cost:0,Antimatter Cost:2,White Cost:0
+2,Antimatter,2,Dark Matter Cost:5,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:3
 
-3,White,4, {"Dark Matter":7, "Water": 0, "Green":0, "Antimatter":0, "White":0}
-3,White,5, {"Dark Matter":7, "Water": 0, "Green":0, "Antimatter":0, "White":3}
-3,White,4, {"Dark Matter":6, "Water": 0, "Green":0, "Antimatter":3, "White":3}
-3,White,3, {"Dark Matter":3, "Water": 3, "Green":3, "Antimatter":5, "White":0}
+2,White,2,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:5,White Cost:0
+2,White,3,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:6
+2,White,1,Dark Matter Cost:2,Water Cost:0,Green Cost:3,Antimatter Cost:2,White Cost:0
+2,White,2,Dark Matter Cost:2,Water Cost:0,Green Cost:1,Antimatter Cost:4,White Cost:0
+2,White,1,Dark Matter Cost:0,Water Cost:3,Green Cost:0,Antimatter Cost:3,White Cost:2
+2,White,2,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:5,White Cost:0
+
+
+3,Dark Matter,4,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:7,White Cost:0
+3,Dark Matter,5,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:7,White Cost:0
+3,Dark Matter,4,Dark Matter Cost:3,Water Cost:0,Green Cost:3,Antimatter Cost:6,White Cost:0
+3,Dark Matter,3,Dark Matter Cost:0,Water Cost:3,Green Cost:5,Antimatter Cost:3,White Cost:3
+
+3,Water,4,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:7
+3,Water,5,Dark Matter Cost:0,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:7
+3,Water,4,Dark Matter Cost:3,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:6
+3,Water,3,Dark Matter Cost:5,Water Cost:0,Green Cost:3,Antimatter Cost:3,White Cost:3
+
+3,Green,4,Dark Matter Cost:0,Water Cost:7,Green Cost:0,Antimatter Cost:0,White Cost:0
+3,Green,5,Dark Matter Cost:0,Water Cost:7,Green Cost:3,Antimatter Cost:0,White Cost:0
+3,Green,4,Dark Matter Cost:0,Water Cost:6,Green Cost:3,Antimatter Cost:0,White Cost:3
+3,Green,3,Dark Matter Cost:3,Water Cost:3,Green Cost:0,Antimatter Cost:3,White Cost:5
+
+3,Antimatter,4,Dark Matter Cost:0,Water Cost:0,Green Cost:7,Antimatter Cost:0,White Cost:0
+3,Antimatter,5,Dark Matter Cost:0,Water Cost:0,Green Cost:7,Antimatter Cost:3,White Cost:0
+3,Antimatter,4,Dark Matter Cost:0,Water Cost:3,Green Cost:6,Antimatter Cost:3,White Cost:0
+3,Antimatter,3,Dark Matter Cost:3,Water Cost:5,Green Cost:3,Antimatter Cost:0,White Cost:3
+
+3,White,4,Dark Matter Cost:7,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
+3,White,5,Dark Matter Cost:7,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:3
+3,White,4,Dark Matter Cost:6,Water Cost:0,Green Cost:0,Antimatter Cost:3,White Cost:3
+3,White,3,Dark Matter Cost:3,Water Cost:3,Green Cost:3,Antimatter Cost:5,White Cost:0
