@@ -17,6 +17,10 @@ green = (0,255,0)
 white = (255,255,255)
 red = (255,0,0)
 
+# Game Globals
+CARDS_PER_MARKETPLACE_ROW = 4
+b_DEBUG = True
+
 # Game State
 num_players = 2
 card_catalog = {}   # Used to hold all information regarding the playing cards
@@ -30,6 +34,7 @@ coin_bank = {
     "Antimatter" :0,
     "White" :0
 }
+marketplace = {}
 
 player_list = []
 
@@ -37,7 +42,18 @@ gameDisplay = pygame.display.set_mode((display_width,display_height))
 pygame.display.set_caption("Race Game")
 clock = pygame.time.Clock()
 
+# --------------------------------------------------------------
+# Debug
+# --------------------------------------------------------------
+def d_print(message):
+    """Debug print message"""
+    if b_DEBUG:
+        print("Debug Message: {}".format(message))
 
+
+# --------------------------------------------------------------
+# Game Setup
+# --------------------------------------------------------------
 def setup_load_card_catalogs():
     # Create Card Catalog of all cards in game
     with open('cards.csv') as card_csv_file:
@@ -94,7 +110,7 @@ def setup_build_decks():
             card_decks[int(id) // 1000] = []
             card_decks[int(id) // 1000].append(id)
     for level in card_decks.keys():
-        random.shuffle(card_decks[1])
+        random.shuffle(card_decks[level])
 
     # Select bonus cards
     bonus_options.extend(random.sample(list(bonus_catalog), num_players + 1))
@@ -127,7 +143,15 @@ def setup_player_creation():
         player_list.append(player.Player("Player 4"))
 
 
+def setup_marketplace():
+    for level in card_decks:
+        marketplace[level] = [None] * CARDS_PER_MARKETPLACE_ROW
+        for _ in range(CARDS_PER_MARKETPLACE_ROW):
+            draw_card_to_marketplace(level)
+
+
 def game_setup(n_players = 2):
+    """Main Game Setup Function. Calls all other Setup Functions"""
     global num_players
     num_players = n_players
 
@@ -136,27 +160,110 @@ def game_setup(n_players = 2):
     setup_build_decks()
     setup_coin_bank()
     setup_player_creation()
+    setup_marketplace()
+
+
+# --------------------------------------------------------------
+# Game Mechanics
+# --------------------------------------------------------------
+def draw_card_to_marketplace(level):
+    # Check if draw deck is empty
+    if len(card_decks[level]) == 0:
+        d_print(globals.ERR_001)
+        return globals.ERR_001
+    # Check if marketplace has space
+    for card_space in marketplace[level]:
+        if card_space is None:
+            marketplace[level][marketplace[level].index(None)] = card_decks[level].pop()
+            return globals.ERR_000
+
+    else:
+        d_print(globals.ERR_002)
+        return globals.ERR_002
+
+
+def is_in_marketplace(id):
+    """Checks to see if the card is available for purchase."""
+    for level in marketplace:
+        return any(card_id == id for card_id in marketplace[level])
+
+
+# --------------------------------------------------------------
+# Text Display
+# --------------------------------------------------------------
+def text_display_marketplace():
+    horizontal_card_spacing = "    "
+    market_display = {}
+
+    print("Marketplace:")
+    for level in marketplace:
+        print(marketplace[level])
+
+    level_print_order = list(marketplace.keys())
+    level_print_order.reverse()
+
+    for level in level_print_order:
+        for card_id in marketplace[level]:
+            card_display = text_display_card(card_id)
+            for line in card_display:
+                market_line = (level-1)*len(card_display) + line
+                if market_line in market_display:
+                    market_display[market_line] += horizontal_card_spacing + card_display[line]
+                else:
+                    market_display[market_line] = card_display[line]
+
+    print(market_display)
+    s_market_display = ""
+    for full_line in market_display:
+        s_market_display += market_display[full_line] + "\n"
+
+    return s_market_display
 
 
 
 
+def text_display_card(id):
+    """Text based Display of the card"""
+    text = {}
+    text[0] = "+----------------+"
+    text[1] = "| {0}VP      {1} |".format(card_catalog[id]["vp"], card_catalog[id]["type"][:5])
+    text[2] = "|                |"
+    text[3] = "|          lvl {} |".format(card_catalog[id]["level"])
+    text[4] = "|   COST         |"
+    text[5] = "| {} Dark Matter  |".format(card_catalog[id]["cost"]["Dark Matter"])
+    text[6] = "| {} Water        |".format(card_catalog[id]["cost"]["Water"])
+    text[7] = "| {} Green        |".format(card_catalog[id]["cost"]["Green"])
+    text[8] = "| {} Anti Matter  |".format(card_catalog[id]["cost"]["Antimatter"])
+    text[9] = "| {} White        |".format(card_catalog[id]["cost"]["White"])
+    text[10] ="|         id{} |".format(id)
+    text[11] = "+----------------+"
+    return text
 
-
-
+# --------------------------------------------------------------
+# Game Loop
+# --------------------------------------------------------------
 def game_loop():
     b_game_end = False
     while b_game_end == False:
+        # Every player gets equal number of turns
         for agent in player_list:
-            err_message = ""
+            err_message = globals.ERR_000
             b_action_complete = False
+            # Player makes a decision, game_loop checks if decision is valid, if not, requests new decision.
             while b_action_complete == False:
+                b_action_complete = True
                 action = agent.perform_main_action(err_message)
 
-                if action["message"] == globals.PERCHASE_CARD_MARKET:
+                if action["message"] == globals.PURCHASE_CARD_MARKET:
+                    if is_in_marketplace:
+                        pass
                     pass
 
                 if action["message"] == globals.RESERVE_CARD:
                     agent.reserve.append(action["card_id"])
+
+                if action["message"] == globals.PURCHASE_CARD_RESERVE:
+                    pass
 
         b_game_end = True
 
@@ -177,7 +284,12 @@ def game_loop():
 
 
 game_setup(3)
-print(num_players)
+print("Number of Players: {}".format(num_players))
+print(text_display_marketplace())
+
+print()
+print(text_display_card(1001))
+print()
 
 print(coin_bank)
 game_loop()
