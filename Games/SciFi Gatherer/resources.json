@@ -1,0 +1,268 @@
+{
+  "number_of_resources" :6,
+  "number_of_card_power_levels" : 3,
+  "resources": {
+    "resource_1": {
+      "long_name": "Black",
+      "short_name": "Blk",
+      "type": "standard",
+      "starting_amount": [4, 5, 7]
+    },
+    "resource_2": {
+      "long_name": "Blue",
+      "short_name": "Blu",
+      "type": "standard",
+      "starting_amount": [4, 5, 7]
+    },
+    "resource_3": {
+      "long_name": "Green",
+      "short_name": "Gre",
+      "type": "standard",
+      "starting_amount": [4, 5, 7]
+    },
+    "resource_4": {
+      "long_name": "Red",
+      "short_name": "Red",
+      "type": "standard",
+      "starting_amount": [4, 5, 7]
+    },
+    "resource_5": {
+      "long_name": "White",
+      "short_name": "Wht",
+      "type": "standard",
+      "starting_amount": [4, 5, 7]
+    },
+    "resource_6": {
+      "long_name": "Gold",
+      "short_name": "Gld",
+      "type": "wild",
+      "starting_amount": [5, 5, 5]
+    }
+  },
+
+
+
+
+
+  "cards":[
+    // Resource 1 Level 1 (Black)
+    {
+      "id":1001, "name":"no_name",
+      "type":"resource_1", "level":1, "vp":0,
+      "cost":[0, 0, 2, 1, 0, 0]
+      },
+    {
+      "id":1002, "name":"no_name",
+      "type":"resource_1", "level":1, "vp":0,
+      "cost":[0, 0, 3, 0, 0, 0]
+      },
+    {
+      "id":1003, "name":"no_name",
+      "type":"resource_1", "level":1, "vp":0,
+      "cost":[0, 0, 2, 0, 2, 0]
+      },
+    {
+      "id":1004, "name":"no_name",
+      "type":"resource_1", "level":1, "vp":0,
+      "cost":[0, 1, 1, 1, 1, 0]
+      },
+    {
+      "id":1005, "name":"no_name",
+      "type":"resource_1", "level":1, "vp":1,
+      "cost":[0, 4, 0, 0, 0, 0]
+      },
+    {
+      "id":1006, "name":"no_name",
+      "type":"resource_1", "level":1, "vp":0,
+      "cost":[1, 0, 1, 3, 0, 0]
+      },
+    {
+      "id":1007, "name":"no_name",
+      "type":"resource_1", "level":1, "vp":0,
+      "cost":[0, 2, 0, 1, 2, 0]
+      },
+    {
+      "id":1008, "name":"no_name",
+      "type":"resource_1", "level":1, "vp":0,
+      "cost":[0, 2, 1, 1, 1, 0]
+      },
+
+
+    // Resource 2 Level 1 (Blue)
+    {
+      "id":1009, "name":"no_name",
+      "type":"resource_2", "level":1, "vp":0,
+      "cost":[2, 0, 0, 0, 1, 0]
+      },
+    {
+      "id":1010, "name":"no_name",
+      "type":"resource_2", "level":1, "vp":0,
+      "cost":[3, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":1011, "name":"no_name",
+      "type":"resource_2", "level":1, "vp":0,
+      "cost":[2, 0, 2, 0, 0, 0]
+      },
+    {
+      "id":1012, "name":"no_name",
+      "type":"resource_2", "level":1, "vp":0,
+      "cost":[1, 0, 1, 1, 1, 0]
+      },
+    {
+      "id":1013, "name":"no_name",
+      "type":"resource_2", "level":1, "vp":1,
+      "cost":[0, 0, 0, 4, 0, 0]
+      },
+    {
+      "id":1014, "name":"no_name",
+      "type":"resource_2", "level":1, "vp":0,
+      "cost":[0, 1, 3, 1, 0, 0]
+      },
+    {
+      "id":1015, "name":"no_name",
+      "type":"resource_2", "level":1, "vp":0,
+      "cost":[0, 0, 2, 2, 1, 0]
+      },
+    {
+      "id":1016, "name":"no_name",
+      "type":"resource_2", "level":1, "vp":0,
+      "cost":[1, 0, 1, 2, 1, 0]
+      },
+
+
+
+    // Resource 3 Level 1 (Green)
+    {
+      "id":1017, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 1, 0, 0, 2, 0]
+      },
+    {
+      "id":1018, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 3, 0, 0]
+      },
+    {
+      "id":1019, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 2, 0, 2, 0, 0]
+      },
+    {
+      "id":1020, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[1, 1, 0, 1, 1, 0]
+      },
+    {
+      "id":1021, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":1,
+      "cost":[4, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":1022, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 3, 1, 0, 1, 0]
+      },
+    {
+      "id":1023, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[2, 1, 0, 2, 0, 0]
+      },
+    {
+      "id":1024, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[2, 1, 0, 1, 1, 0]
+      },
+
+
+
+    // Resource 4 Level 1 (Red)
+    {
+      "id":1025, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 2, 1, 0, 0, 0]
+      },
+    {
+      "id":1026, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 0, 3, 0]
+      },
+    {
+      "id":1027, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 2, 2, 0]
+      },
+    {
+      "id":1028, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[1, 1, 1, 0, 1, 0]
+      },
+    {
+      "id":1029, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":1,
+      "cost":[0, 0, 0, 0, 4, 0]
+      },
+    {
+      "id":1030, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[3, 0, 0, 1, 1, 0]
+      },
+    {
+      "id":1031, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[2, 0, 1, 0, 2, 0]
+      },
+    {
+      "id":1032, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[1, 1, 1, 0, 2, 0]
+      },
+
+
+
+    // Resource 5 Level 1 (White) TODO
+    {
+      "id":1033, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":1034, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":1035, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":1036, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":1037, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":1,
+      "cost":[0, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":1038, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":1039, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":1040, "name":"no_name",
+      "type":"resource_3", "level":1, "vp":0,
+      "cost":[0, 0, 0, 0, 0, 0]
+      }
+
+
+    ],
+  "bonus": "TODO"
+}

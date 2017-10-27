@@ -1,108 +1,108 @@
 Level, Name, Type, Victory Points, Cost
-1,Dark Matter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:2,Antimatter Cost:1,White Cost:0
-1,Dark Matter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:3,Antimatter Cost:0,White Cost:0
-1,Dark Matter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:2,Antimatter Cost:0,White Cost:2
-1,Dark Matter,0,Dark Matter Cost:0,Water Cost:1,Green Cost:1,Antimatter Cost:1,White Cost:1
-1,Dark Matter,1,Dark Matter Cost:0,Water Cost:4,Green Cost:0,Antimatter Cost:0,White Cost:0
-1,Dark Matter,0,Dark Matter Cost:1,Water Cost:0,Green Cost:1,Antimatter Cost:3,White Cost:0
-1,Dark Matter,0,Dark Matter Cost:0,Water Cost:2,Green Cost:0,Antimatter Cost:1,White Cost:2
-1,Dark Matter,0,Dark Matter Cost:0,Water Cost:2,Green Cost:1,Antimatter Cost:1,White Cost:1
+1,Bla,0,Bla Cost:0,Blu Cost:0,Grn Cost:2,Red Cost:1,Wht Cost:0
+1,Bla,0,Bla Cost:0,Blu Cost:0,Grn Cost:3,Red Cost:0,Wht Cost:0
+1,Bla,0,Bla Cost:0,Blu Cost:0,Grn Cost:2,Red Cost:0,Wht Cost:2
+1,Bla,0,Bla Cost:0,Blu Cost:1,Grn Cost:1,Red Cost:1,Wht Cost:1
+1,Bla,1,Bla Cost:0,Blu Cost:4,Grn Cost:0,Red Cost:0,Wht Cost:0
+1,Bla,0,Bla Cost:1,Blu Cost:0,Grn Cost:1,Red Cost:3,Wht Cost:0
+1,Bla,0,Bla Cost:0,Blu Cost:2,Grn Cost:0,Red Cost:1,Wht Cost:2
+1,Bla,0,Bla Cost:0,Blu Cost:2,Grn Cost:1,Red Cost:1,Wht Cost:1
 
-1,Water,0,Dark Matter Cost:2,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:1
-1,Water,0,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
-1,Water,0,Dark Matter Cost:2,Water Cost:0,Green Cost:2,Antimatter Cost:0,White Cost:0
-1,Water,0,Dark Matter Cost:1,Water Cost:0,Green Cost:1,Antimatter Cost:1,White Cost:1
-1,Water,1,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:4,White Cost:0
-1,Water,0,Dark Matter Cost:0,Water Cost:1,Green Cost:3,Antimatter Cost:1,White Cost:0
-1,Water,0,Dark Matter Cost:0,Water Cost:0,Green Cost:2,Antimatter Cost:2,White Cost:1
-1,Water,0,Dark Matter Cost:1,Water Cost:0,Green Cost:1,Antimatter Cost:2,White Cost:1
-
-
-1,Green,0,Dark Matter Cost:0,Water Cost:1,Green Cost:0,Antimatter Cost:0,White Cost:2
-1,Green,0,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:3,White Cost:0
-1,Green,0,Dark Matter Cost:0,Water Cost:2,Green Cost:0,Antimatter Cost:2,White Cost:0
-1,Green,0,Dark Matter Cost:1,Water Cost:1,Green Cost:0,Antimatter Cost:1,White Cost:1
-1,Green,1,Dark Matter Cost:4,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
-1,Green,0,Dark Matter Cost:0,Water Cost:3,Green Cost:1,Antimatter Cost:0,White Cost:1
-1,Green,0,Dark Matter Cost:2,Water Cost:1,Green Cost:0,Antimatter Cost:2,White Cost:0
-1,Green,0,Dark Matter Cost:2,Water Cost:1,Green Cost:0,Antimatter Cost:1,White Cost:1
-
-1,Antimatter,0,Dark Matter Cost:0,Water Cost:2,Green Cost:1,Antimatter Cost:0,White Cost:0
-1,Antimatter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:3
-1,Antimatter,0,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:2,White Cost:2
-1,Antimatter,0,Dark Matter Cost:1,Water Cost:1,Green Cost:1,Antimatter Cost:0,White Cost:1
-1,Antimatter,1,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:4
-1,Antimatter,0,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:1,White Cost:1
-1,Antimatter,0,Dark Matter Cost:2,Water Cost:0,Green Cost:1,Antimatter Cost:0,White Cost:2
-1,Antimatter,0,Dark Matter Cost:1,Water Cost:1,Green Cost:1,Antimatter Cost:0,White Cost:2
-
-1,White,0,Dark Matter Cost:1,Water Cost:0,Green Cost:0,Antimatter Cost:2,White Cost:0
-1,White,0,Dark Matter Cost:0,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:0
-1,White,0,Dark Matter Cost:2,Water Cost:2,Green Cost:0,Antimatter Cost:0,White Cost:0
-1,White,0,Dark Matter Cost:1,Water Cost:1,Green Cost:1,Antimatter Cost:1,White Cost:0
-1,White,1,Dark Matter Cost:0,Water Cost:0,Green Cost:4,Antimatter Cost:0,White Cost:0
-1,White,0,Dark Matter Cost:1,Water Cost:1,Green Cost:0,Antimatter Cost:0,White Cost:3
-1,White,0,Dark Matter Cost:1,Water Cost:2,Green Cost:2,Antimatter Cost:0,White Cost:0
-1,White,0,Dark Matter Cost:1,Water Cost:1,Green Cost:2,Antimatter Cost:1,White Cost:0
+1,Blu,0,Bla Cost:2,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:1
+1,Blu,0,Bla Cost:3,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:0
+1,Blu,0,Bla Cost:2,Blu Cost:0,Grn Cost:2,Red Cost:0,Wht Cost:0
+1,Blu,0,Bla Cost:1,Blu Cost:0,Grn Cost:1,Red Cost:1,Wht Cost:1
+1,Blu,1,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:4,Wht Cost:0
+1,Blu,0,Bla Cost:0,Blu Cost:1,Grn Cost:3,Red Cost:1,Wht Cost:0
+1,Blu,0,Bla Cost:0,Blu Cost:0,Grn Cost:2,Red Cost:2,Wht Cost:1
+1,Blu,0,Bla Cost:1,Blu Cost:0,Grn Cost:1,Red Cost:2,Wht Cost:1
 
 
-2,Dark Matter,2,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:5
-2,Dark Matter,3,Dark Matter Cost:6,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
-2,Dark Matter,1,Dark Matter Cost:0,Water Cost:2,Green Cost:2,Antimatter Cost:0,White Cost:3
-2,Dark Matter,2,Dark Matter Cost:0,Water Cost:1,Green Cost:4,Antimatter Cost:2,White Cost:0
-2,Dark Matter,1,Dark Matter Cost:2,Water Cost:0,Green Cost:3,Antimatter Cost:0,White Cost:3
-2,Dark Matter,2,Dark Matter Cost:0,Water Cost:0,Green Cost:5,Antimatter Cost:3,White Cost:0
+1,Grn,0,Bla Cost:0,Blu Cost:1,Grn Cost:0,Red Cost:0,Wht Cost:2
+1,Grn,0,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:3,Wht Cost:0
+1,Grn,0,Bla Cost:0,Blu Cost:2,Grn Cost:0,Red Cost:2,Wht Cost:0
+1,Grn,0,Bla Cost:1,Blu Cost:1,Grn Cost:0,Red Cost:1,Wht Cost:1
+1,Grn,1,Bla Cost:4,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:0
+1,Grn,0,Bla Cost:0,Blu Cost:3,Grn Cost:1,Red Cost:0,Wht Cost:1
+1,Grn,0,Bla Cost:2,Blu Cost:1,Grn Cost:0,Red Cost:2,Wht Cost:0
+1,Grn,0,Bla Cost:2,Blu Cost:1,Grn Cost:0,Red Cost:1,Wht Cost:1
 
-2,Water,2,Dark Matter Cost:0,Water Cost:5,Green Cost:0,Antimatter Cost:0,White Cost:0
-2,Water,3,Dark Matter Cost:0,Water Cost:6,Green Cost:0,Antimatter Cost:0,White Cost:0
-2,Water,1,Dark Matter Cost:0,Water Cost:2,Green Cost:2,Antimatter Cost:3,White Cost:0
-2,Water,2,Dark Matter Cost:4,Water Cost:0,Green Cost:0,Antimatter Cost:1,White Cost:2
-2,Water,1,Dark Matter Cost:3,Water Cost:2,Green Cost:3,Antimatter Cost:0,White Cost:0
-2,Water,2,Dark Matter Cost:0,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:5
+1,Red,0,Bla Cost:0,Blu Cost:2,Grn Cost:1,Red Cost:0,Wht Cost:0
+1,Red,0,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:3
+1,Red,0,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:2,Wht Cost:2
+1,Red,0,Bla Cost:1,Blu Cost:1,Grn Cost:1,Red Cost:0,Wht Cost:1
+1,Red,1,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:4
+1,Red,0,Bla Cost:3,Blu Cost:0,Grn Cost:0,Red Cost:1,Wht Cost:1
+1,Red,0,Bla Cost:2,Blu Cost:0,Grn Cost:1,Red Cost:0,Wht Cost:2
+1,Red,0,Bla Cost:1,Blu Cost:1,Grn Cost:1,Red Cost:0,Wht Cost:2
 
-2,Green,2,Dark Matter Cost:0,Water Cost:0,Green Cost:5,Antimatter Cost:0,White Cost:0
-2,Green,3,Dark Matter Cost:0,Water Cost:0,Green Cost:6,Antimatter Cost:0,White Cost:0
-2,Green,1,Dark Matter Cost:2,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:2
-2,Green,2,Dark Matter Cost:1,Water Cost:2,Green Cost:0,Antimatter Cost:0,White Cost:4
-2,Green,1,Dark Matter Cost:0,Water Cost:0,Green Cost:2,Antimatter Cost:3,White Cost:3
-2,Green,2,Dark Matter Cost:0,Water Cost:5,Green Cost:3,Antimatter Cost:0,White Cost:0
-
-2,Antimatter,2,Dark Matter Cost:5,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
-2,Antimatter,3,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:6,White Cost:0
-2,Antimatter,1,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:2,White Cost:2
-2,Antimatter,2,Dark Matter Cost:0,Water Cost:4,Green Cost:2,Antimatter Cost:0,White Cost:1
-2,Antimatter,1,Dark Matter Cost:3,Water Cost:3,Green Cost:0,Antimatter Cost:2,White Cost:0
-2,Antimatter,2,Dark Matter Cost:5,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:3
-
-2,White,2,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:5,White Cost:0
-2,White,3,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:6
-2,White,1,Dark Matter Cost:2,Water Cost:0,Green Cost:3,Antimatter Cost:2,White Cost:0
-2,White,2,Dark Matter Cost:2,Water Cost:0,Green Cost:1,Antimatter Cost:4,White Cost:0
-2,White,1,Dark Matter Cost:0,Water Cost:3,Green Cost:0,Antimatter Cost:3,White Cost:2
-2,White,2,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:5,White Cost:0
+1,Wht,0,Bla Cost:1,Blu Cost:0,Grn Cost:0,Red Cost:2,Wht Cost:0
+1,Wht,0,Bla Cost:0,Blu Cost:3,Grn Cost:0,Red Cost:0,Wht Cost:0
+1,Wht,0,Bla Cost:2,Blu Cost:2,Grn Cost:0,Red Cost:0,Wht Cost:0
+1,Wht,0,Bla Cost:1,Blu Cost:1,Grn Cost:1,Red Cost:1,Wht Cost:0
+1,Wht,1,Bla Cost:0,Blu Cost:0,Grn Cost:4,Red Cost:0,Wht Cost:0
+1,Wht,0,Bla Cost:1,Blu Cost:1,Grn Cost:0,Red Cost:0,Wht Cost:3
+1,Wht,0,Bla Cost:1,Blu Cost:2,Grn Cost:2,Red Cost:0,Wht Cost:0
+1,Wht,0,Bla Cost:1,Blu Cost:1,Grn Cost:2,Red Cost:1,Wht Cost:0
 
 
-3,Dark Matter,4,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:7,White Cost:0
-3,Dark Matter,5,Dark Matter Cost:3,Water Cost:0,Green Cost:0,Antimatter Cost:7,White Cost:0
-3,Dark Matter,4,Dark Matter Cost:3,Water Cost:0,Green Cost:3,Antimatter Cost:6,White Cost:0
-3,Dark Matter,3,Dark Matter Cost:0,Water Cost:3,Green Cost:5,Antimatter Cost:3,White Cost:3
+2,Bla,2,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:5
+2,Bla,3,Bla Cost:6,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:0
+2,Bla,1,Bla Cost:0,Blu Cost:2,Grn Cost:2,Red Cost:0,Wht Cost:3
+2,Bla,2,Bla Cost:0,Blu Cost:1,Grn Cost:4,Red Cost:2,Wht Cost:0
+2,Bla,1,Bla Cost:2,Blu Cost:0,Grn Cost:3,Red Cost:0,Wht Cost:3
+2,Bla,2,Bla Cost:0,Blu Cost:0,Grn Cost:5,Red Cost:3,Wht Cost:0
 
-3,Water,4,Dark Matter Cost:0,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:7
-3,Water,5,Dark Matter Cost:0,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:7
-3,Water,4,Dark Matter Cost:3,Water Cost:3,Green Cost:0,Antimatter Cost:0,White Cost:6
-3,Water,3,Dark Matter Cost:5,Water Cost:0,Green Cost:3,Antimatter Cost:3,White Cost:3
+2,Blu,2,Bla Cost:0,Blu Cost:5,Grn Cost:0,Red Cost:0,Wht Cost:0
+2,Blu,3,Bla Cost:0,Blu Cost:6,Grn Cost:0,Red Cost:0,Wht Cost:0
+2,Blu,1,Bla Cost:0,Blu Cost:2,Grn Cost:2,Red Cost:3,Wht Cost:0
+2,Blu,2,Bla Cost:4,Blu Cost:0,Grn Cost:0,Red Cost:1,Wht Cost:2
+2,Blu,1,Bla Cost:3,Blu Cost:2,Grn Cost:3,Red Cost:0,Wht Cost:0
+2,Blu,2,Bla Cost:0,Blu Cost:3,Grn Cost:0,Red Cost:0,Wht Cost:5
 
-3,Green,4,Dark Matter Cost:0,Water Cost:7,Green Cost:0,Antimatter Cost:0,White Cost:0
-3,Green,5,Dark Matter Cost:0,Water Cost:7,Green Cost:3,Antimatter Cost:0,White Cost:0
-3,Green,4,Dark Matter Cost:0,Water Cost:6,Green Cost:3,Antimatter Cost:0,White Cost:3
-3,Green,3,Dark Matter Cost:3,Water Cost:3,Green Cost:0,Antimatter Cost:3,White Cost:5
+2,Grn,2,Bla Cost:0,Blu Cost:0,Grn Cost:5,Red Cost:0,Wht Cost:0
+2,Grn,3,Bla Cost:0,Blu Cost:0,Grn Cost:6,Red Cost:0,Wht Cost:0
+2,Grn,1,Bla Cost:2,Blu Cost:3,Grn Cost:0,Red Cost:0,Wht Cost:2
+2,Grn,2,Bla Cost:1,Blu Cost:2,Grn Cost:0,Red Cost:0,Wht Cost:4
+2,Grn,1,Bla Cost:0,Blu Cost:0,Grn Cost:2,Red Cost:3,Wht Cost:3
+2,Grn,2,Bla Cost:0,Blu Cost:5,Grn Cost:3,Red Cost:0,Wht Cost:0
 
-3,Antimatter,4,Dark Matter Cost:0,Water Cost:0,Green Cost:7,Antimatter Cost:0,White Cost:0
-3,Antimatter,5,Dark Matter Cost:0,Water Cost:0,Green Cost:7,Antimatter Cost:3,White Cost:0
-3,Antimatter,4,Dark Matter Cost:0,Water Cost:3,Green Cost:6,Antimatter Cost:3,White Cost:0
-3,Antimatter,3,Dark Matter Cost:3,Water Cost:5,Green Cost:3,Antimatter Cost:0,White Cost:3
+2,Red,2,Bla Cost:5,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:0
+2,Red,3,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:6,Wht Cost:0
+2,Red,1,Bla Cost:3,Blu Cost:0,Grn Cost:0,Red Cost:2,Wht Cost:2
+2,Red,2,Bla Cost:0,Blu Cost:4,Grn Cost:2,Red Cost:0,Wht Cost:1
+2,Red,1,Bla Cost:3,Blu Cost:3,Grn Cost:0,Red Cost:2,Wht Cost:0
+2,Red,2,Bla Cost:5,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:3
 
-3,White,4,Dark Matter Cost:7,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:0
-3,White,5,Dark Matter Cost:7,Water Cost:0,Green Cost:0,Antimatter Cost:0,White Cost:3
-3,White,4,Dark Matter Cost:6,Water Cost:0,Green Cost:0,Antimatter Cost:3,White Cost:3
-3,White,3,Dark Matter Cost:3,Water Cost:3,Green Cost:3,Antimatter Cost:5,White Cost:0
+2,Wht,2,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:5,Wht Cost:0
+2,Wht,3,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:6
+2,Wht,1,Bla Cost:2,Blu Cost:0,Grn Cost:3,Red Cost:2,Wht Cost:0
+2,Wht,2,Bla Cost:2,Blu Cost:0,Grn Cost:1,Red Cost:4,Wht Cost:0
+2,Wht,1,Bla Cost:0,Blu Cost:3,Grn Cost:0,Red Cost:3,Wht Cost:2
+2,Wht,2,Bla Cost:3,Blu Cost:0,Grn Cost:0,Red Cost:5,Wht Cost:0
+
+
+3,Bla,4,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:7,Wht Cost:0
+3,Bla,5,Bla Cost:3,Blu Cost:0,Grn Cost:0,Red Cost:7,Wht Cost:0
+3,Bla,4,Bla Cost:3,Blu Cost:0,Grn Cost:3,Red Cost:6,Wht Cost:0
+3,Bla,3,Bla Cost:0,Blu Cost:3,Grn Cost:5,Red Cost:3,Wht Cost:3
+
+3,Blu,4,Bla Cost:0,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:7
+3,Blu,5,Bla Cost:0,Blu Cost:3,Grn Cost:0,Red Cost:0,Wht Cost:7
+3,Blu,4,Bla Cost:3,Blu Cost:3,Grn Cost:0,Red Cost:0,Wht Cost:6
+3,Blu,3,Bla Cost:5,Blu Cost:0,Grn Cost:3,Red Cost:3,Wht Cost:3
+
+3,Grn,4,Bla Cost:0,Blu Cost:7,Grn Cost:0,Red Cost:0,Wht Cost:0
+3,Grn,5,Bla Cost:0,Blu Cost:7,Grn Cost:3,Red Cost:0,Wht Cost:0
+3,Grn,4,Bla Cost:0,Blu Cost:6,Grn Cost:3,Red Cost:0,Wht Cost:3
+3,Grn,3,Bla Cost:3,Blu Cost:3,Grn Cost:0,Red Cost:3,Wht Cost:5
+
+3,Red,4,Bla Cost:0,Blu Cost:0,Grn Cost:7,Red Cost:0,Wht Cost:0
+3,Red,5,Bla Cost:0,Blu Cost:0,Grn Cost:7,Red Cost:3,Wht Cost:0
+3,Red,4,Bla Cost:0,Blu Cost:3,Grn Cost:6,Red Cost:3,Wht Cost:0
+3,Red,3,Bla Cost:3,Blu Cost:5,Grn Cost:3,Red Cost:0,Wht Cost:3
+
+3,Wht,4,Bla Cost:7,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:0
+3,Wht,5,Bla Cost:7,Blu Cost:0,Grn Cost:0,Red Cost:0,Wht Cost:3
+3,Wht,4,Bla Cost:6,Blu Cost:0,Grn Cost:0,Red Cost:3,Wht Cost:3
+3,Wht,3,Bla Cost:3,Blu Cost:3,Grn Cost:3,Red Cost:5,Wht Cost:0
