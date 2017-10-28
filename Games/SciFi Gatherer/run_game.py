@@ -4,6 +4,9 @@ import random
 import csv
 import player
 import globals
+import json
+
+from pprint import pprint
 
 pygame.init()
 
@@ -19,6 +22,8 @@ red = (255,0,0)
 
 # Game Globals
 CARDS_PER_MARKETPLACE_ROW = 4
+NUMBER_OF_RESOURCES   = 6 # Default value. Altered when resource file is loaded (resources.json)
+NUM_CARD_POWER_LEVELS = 3 # Default value. Altered when resource file is loaded (resources.json)
 b_DEBUG = True
 
 # Game State
@@ -57,6 +62,14 @@ def d_print(message):
 # --------------------------------------------------------------
 def setup_load_card_catalogs():
     # Create Card Catalog of all cards in game
+    with open('resources.json') as data_file:
+        data = json.load(data_file)
+    global card_catalog
+    card_array = data["cards"]
+    for card in card_array:
+        card_catalog[card["id"]] = card
+    # ToDo: Fix this function so that it loads from json.  Adds flexibility with resource # and type
+
     with open('cards.csv') as card_csv_file:
         reader = csv.reader(card_csv_file)
         card_counter = [0, 0, 0]
@@ -284,12 +297,24 @@ def game_loop():
 
 
 
-game_setup(3)
-print("Number of Players: {}".format(num_players))
-print(text_display_marketplace())
+# game_setup(3)
+# print("Number of Players: {}".format(num_players))
+# print(text_display_marketplace())
+#
+#
+# print(coin_bank)
+
+with open('resources.json') as data_file:
+    data = json.load(data_file)
+
+card_array = data["cards"]
+for card in card_array:
+    card_catalog[card["id"]] = card
+
+pprint(card_catalog)
 
 
-print(coin_bank)
+
 game_loop()
 pygame.quit()
 quit()
