@@ -41,11 +41,7 @@
   },
 
 
-
-
-
   "cards":[
-    // Resource 1 Level 1 (Black)
     {
       "id":1001, "name":"no_name",
       "type":"resource_1", "level":1, "vp":0,
@@ -87,8 +83,6 @@
       "cost":[0, 2, 1, 1, 1, 0]
       },
 
-
-    // Resource 2 Level 1 (Blue)
     {
       "id":1009, "name":"no_name",
       "type":"resource_2", "level":1, "vp":0,
@@ -130,9 +124,6 @@
       "cost":[1, 0, 1, 2, 1, 0]
       },
 
-
-
-    // Resource 3 Level 1 (Green)
     {
       "id":1017, "name":"no_name",
       "type":"resource_3", "level":1, "vp":0,
@@ -174,95 +165,392 @@
       "cost":[2, 1, 0, 1, 1, 0]
       },
 
-
-
-    // Resource 4 Level 1 (Red)
     {
       "id":1025, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
+      "type":"resource_4", "level":1, "vp":0,
       "cost":[0, 2, 1, 0, 0, 0]
       },
     {
       "id":1026, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
+      "type":"resource_4", "level":1, "vp":0,
       "cost":[0, 0, 0, 0, 3, 0]
       },
     {
       "id":1027, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
+      "type":"resource_4", "level":1, "vp":0,
       "cost":[0, 0, 0, 2, 2, 0]
       },
     {
       "id":1028, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
+      "type":"resource_4", "level":1, "vp":0,
       "cost":[1, 1, 1, 0, 1, 0]
       },
     {
       "id":1029, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":1,
+      "type":"resource_4", "level":1, "vp":1,
       "cost":[0, 0, 0, 0, 4, 0]
       },
     {
       "id":1030, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
+      "type":"resource_4", "level":1, "vp":0,
       "cost":[3, 0, 0, 1, 1, 0]
       },
     {
       "id":1031, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
+      "type":"resource_4", "level":1, "vp":0,
       "cost":[2, 0, 1, 0, 2, 0]
       },
     {
       "id":1032, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
+      "type":"resource_4", "level":1, "vp":0,
       "cost":[1, 1, 1, 0, 2, 0]
       },
 
-
-
-    // Resource 5 Level 1 (White) TODO
     {
       "id":1033, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
-      "cost":[0, 0, 0, 0, 0, 0]
+      "type":"resource_5", "level":1, "vp":0,
+      "cost":[1, 0, 0, 2, 0, 0]
       },
     {
       "id":1034, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
-      "cost":[0, 0, 0, 0, 0, 0]
+      "type":"resource_5", "level":1, "vp":0,
+      "cost":[0, 3, 0, 0, 0, 0]
       },
     {
       "id":1035, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
-      "cost":[0, 0, 0, 0, 0, 0]
+      "type":"resource_5", "level":1, "vp":0,
+      "cost":[2, 2, 0, 0, 0, 0]
       },
     {
       "id":1036, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
-      "cost":[0, 0, 0, 0, 0, 0]
+      "type":"resource_5", "level":1, "vp":0,
+      "cost":[1, 1, 1, 1, 0, 0]
       },
     {
       "id":1037, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":1,
-      "cost":[0, 0, 0, 0, 0, 0]
+      "type":"resource_5", "level":1, "vp":1,
+      "cost":[0, 0, 4, 0, 0, 0]
       },
     {
       "id":1038, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
-      "cost":[0, 0, 0, 0, 0, 0]
+      "type":"resource_5", "level":1, "vp":0,
+      "cost":[1, 1, 0, 0, 3, 0]
       },
     {
       "id":1039, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
-      "cost":[0, 0, 0, 0, 0, 0]
+      "type":"resource_5", "level":1, "vp":0,
+      "cost":[1, 2, 2, 0, 0, 0]
       },
     {
       "id":1040, "name":"no_name",
-      "type":"resource_3", "level":1, "vp":0,
-      "cost":[0, 0, 0, 0, 0, 0]
+      "type":"resource_5", "level":1, "vp":0,
+      "cost":[1, 1, 2, 1, 0, 0]
+      },
+
+
+
+    {
+      "id":2001, "name":"no_name",
+      "type":"resource_1", "level":2, "vp":2,
+      "cost":[0, 0, 0, 0, 5, 0]
+      },
+    {
+      "id":2002, "name":"no_name",
+      "type":"resource_1", "level":2, "vp":3,
+      "cost":[6, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":2003, "name":"no_name",
+      "type":"resource_1", "level":2, "vp":1,
+      "cost":[0, 2, 2, 0, 3, 0]
+      },
+    {
+      "id":2004, "name":"no_name",
+      "type":"resource_1", "level":2, "vp":2,
+      "cost":[0, 1, 4, 2, 0, 0]
+      },
+    {
+      "id":2005, "name":"no_name",
+      "type":"resource_1", "level":2, "vp":1,
+      "cost":[2, 0, 3, 0, 3, 0]
+      },
+    {
+      "id":2006, "name":"no_name",
+      "type":"resource_1", "level":2, "vp":2,
+      "cost":[0, 0, 5, 3, 0, 0]
+      },
+
+    {
+      "id":2007, "name":"no_name",
+      "type":"resource_2", "level":2, "vp":2,
+      "cost":[0, 5, 0, 0, 0, 0]
+      },
+    {
+      "id":2008, "name":"no_name",
+      "type":"resource_2", "level":2, "vp":3,
+      "cost":[0, 6, 0, 0, 0, 0]
+      },
+    {
+      "id":2009, "name":"no_name",
+      "type":"resource_2", "level":2, "vp":1,
+      "cost":[0, 2, 2, 3, 0, 0]
+      },
+    {
+      "id":2010, "name":"no_name",
+      "type":"resource_2", "level":2, "vp":2,
+      "cost":[4, 0, 0, 1, 2, 0]
+      },
+    {
+      "id":2011, "name":"no_name",
+      "type":"resource_2", "level":2, "vp":1,
+      "cost":[3, 2, 3, 0, 0, 0]
+      },
+    {
+      "id":2012, "name":"no_name",
+      "type":"resource_2", "level":2, "vp":2,
+      "cost":[0, 3, 0, 0, 5, 0]
+      },
+
+    {
+      "id":2013, "name":"no_name",
+      "type":"resource_3", "level":2, "vp":2,
+      "cost":[0, 0, 5, 0, 0, 0]
+      },
+    {
+      "id":2014, "name":"no_name",
+      "type":"resource_3", "level":2, "vp":3,
+      "cost":[0, 0, 6, 0, 0, 0]
+      },
+    {
+      "id":2015, "name":"no_name",
+      "type":"resource_3", "level":2, "vp":1,
+      "cost":[2, 3, 0, 0, 2, 0]
+      },
+    {
+      "id":2016, "name":"no_name",
+      "type":"resource_3", "level":2, "vp":2,
+      "cost":[1, 2, 0, 0, 4, 0]
+      },
+    {
+      "id":2017, "name":"no_name",
+      "type":"resource_3", "level":2, "vp":1,
+      "cost":[0, 0, 2, 3, 3, 0]
+      },
+    {
+      "id":2018, "name":"no_name",
+      "type":"resource_3", "level":2, "vp":2,
+      "cost":[0, 5, 3, 0, 0, 0]
+      },
+
+    {
+      "id":2019, "name":"no_name",
+      "type":"resource_4", "level":2, "vp":2,
+      "cost":[5, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":2020, "name":"no_name",
+      "type":"resource_4", "level":2, "vp":3,
+      "cost":[0, 0, 0, 6, 0, 0]
+      },
+    {
+      "id":2021, "name":"no_name",
+      "type":"resource_4", "level":2, "vp":1,
+      "cost":[3, 0, 0, 2, 2, 0]
+      },
+    {
+      "id":2022, "name":"no_name",
+      "type":"resource_4", "level":2, "vp":2,
+      "cost":[0, 4, 2, 0, 1, 0]
+      },
+    {
+      "id":2023, "name":"no_name",
+      "type":"resource_4", "level":2, "vp":1,
+      "cost":[3, 3, 0, 2, 0, 0]
+      },
+    {
+      "id":2024, "name":"no_name",
+      "type":"resource_4", "level":2, "vp":2,
+      "cost":[5, 0, 0, 0, 3, 0]
+      },
+
+    {
+      "id":2025, "name":"no_name",
+      "type":"resource_5", "level":2, "vp":2,
+      "cost":[0, 0, 0, 5, 0, 0]
+      },
+    {
+      "id":2026, "name":"no_name",
+      "type":"resource_5", "level":2, "vp":3,
+      "cost":[0, 0, 0, 0, 6, 0]
+      },
+    {
+      "id":2027, "name":"no_name",
+      "type":"resource_5", "level":2, "vp":1,
+      "cost":[2, 0, 3, 2, 0, 0]
+      },
+    {
+      "id":2028, "name":"no_name",
+      "type":"resource_5", "level":2, "vp":2,
+      "cost":[2, 0, 1, 4, 0, 0]
+      },
+    {
+      "id":2029, "name":"no_name",
+      "type":"resource_5", "level":2, "vp":1,
+      "cost":[0, 3, 0, 3, 2, 0]
+      },
+    {
+      "id":2030, "name":"no_name",
+      "type":"resource_5", "level":2, "vp":2,
+      "cost":[3, 0, 0, 5, 0, 0]
+      },
+
+
+
+    {
+      "id":3001, "name":"no_name",
+      "type":"resource_1", "level":3, "vp":4,
+      "cost":[0, 0, 0, 7, 0, 0]
+      },
+    {
+      "id":3002, "name":"no_name",
+      "type":"resource_1", "level":3, "vp":5,
+      "cost":[3, 0, 0, 7, 0, 0]
+      },
+    {
+      "id":3003, "name":"no_name",
+      "type":"resource_1", "level":3, "vp":4,
+      "cost":[3, 0, 3, 6, 0, 0]
+      },
+    {
+      "id":3004, "name":"no_name",
+      "type":"resource_1", "level":3, "vp":3,
+      "cost":[0, 3, 5, 3, 3, 0]
+      },
+
+    {
+      "id":3005, "name":"no_name",
+      "type":"resource_2", "level":3, "vp":4,
+      "cost":[0, 0, 0, 0, 7, 0]
+      },
+    {
+      "id":3006, "name":"no_name",
+      "type":"resource_2", "level":3, "vp":5,
+      "cost":[0, 3, 0, 0, 7, 0]
+      },
+    {
+      "id":3007, "name":"no_name",
+      "type":"resource_2", "level":3, "vp":4,
+      "cost":[3, 3, 0, 0, 6, 0]
+      },
+    {
+      "id":3008, "name":"no_name",
+      "type":"resource_2", "level":3, "vp":3,
+      "cost":[5, 0, 3, 3, 3, 0]
+      },
+
+    {
+      "id":3009, "name":"no_name",
+      "type":"resource_3", "level":3, "vp":4,
+      "cost":[0, 7, 0, 0, 0, 0]
+      },
+    {
+      "id":3010, "name":"no_name",
+      "type":"resource_3", "level":3, "vp":5,
+      "cost":[0, 7, 3, 0, 0, 0]
+      },
+    {
+      "id":3011, "name":"no_name",
+      "type":"resource_3", "level":3, "vp":4,
+      "cost":[0, 6, 3, 0, 3, 0]
+      },
+    {
+      "id":3012, "name":"no_name",
+      "type":"resource_3", "level":3, "vp":3,
+      "cost":[3, 3, 0, 3, 5, 0]
+      },
+
+    {
+      "id":3013, "name":"no_name",
+      "type":"resource_4", "level":3, "vp":4,
+      "cost":[0, 0, 7, 0, 0, 0]
+      },
+    {
+      "id":3014, "name":"no_name",
+      "type":"resource_4", "level":3, "vp":5,
+      "cost":[0, 0, 7, 3, 0, 0]
+      },
+    {
+      "id":3015, "name":"no_name",
+      "type":"resource_4", "level":3, "vp":4,
+      "cost":[0, 3, 6, 3, 0, 0]
+      },
+    {
+      "id":3016, "name":"no_name",
+      "type":"resource_4", "level":3, "vp":3,
+      "cost":[3, 5, 3, 0, 3, 0]
+      },
+
+    {
+      "id":3017, "name":"no_name",
+      "type":"resource_5", "level":3, "vp":4,
+      "cost":[7, 0, 0, 0, 0, 0]
+      },
+    {
+      "id":3018, "name":"no_name",
+      "type":"resource_5", "level":3, "vp":5,
+      "cost":[7, 0, 0, 0, 3, 0]
+      },
+    {
+      "id":3019, "name":"no_name",
+      "type":"resource_5", "level":3, "vp":4,
+      "cost":[6, 0, 0, 3, 3, 0]
+      },
+    {
+      "id":3020, "name":"no_name",
+      "type":"resource_5", "level":3, "vp":3,
+      "cost":[3, 3, 3, 5, 0, 0]
       }
-
-
     ],
-  "bonus": "TODO"
+  "bonus":[
+    {
+      "id":1, "name":"no_name", "vp":3,
+      "cost":[0, 0, 4, 4, 0, 0]
+    },
+    {
+      "id":2, "name":"no_name", "vp":3,
+      "cost":[0, 4, 0, 0, 4, 0]
+    },
+    {
+      "id":3, "name":"no_name", "vp":3,
+      "cost":[4, 0, 0, 0, 4, 0]
+    },
+    {
+      "id":4, "name":"no_name", "vp":3,
+      "cost":[0, 4, 4, 0, 0, 0]
+    },
+    {
+      "id":5, "name":"no_name", "vp":3,
+      "cost":[4, 0, 0, 4, 0, 0]
+    },
+    {
+      "id":6, "name":"no_name", "vp":3,
+      "cost":[0, 3, 3, 3, 0, 0]
+    },
+    {
+      "id":7, "name":"no_name", "vp":3,
+      "cost":[0, 3, 3, 0, 3, 0]
+    },
+    {
+      "id":8, "name":"no_name", "vp":3,
+      "cost":[3, 3, 0, 0, 3, 0]
+    },
+    {
+      "id":9, "name":"no_name", "vp":3,
+      "cost":[3, 0, 3, 3, 0, 0]
+    },
+    {
+      "id":10, "name":"no_name", "vp":3,
+      "cost":[3, 0, 0, 3, 3, 0]
+    }
+  ]
 }

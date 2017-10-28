@@ -288,9 +288,6 @@ game_setup(3)
 print("Number of Players: {}".format(num_players))
 print(text_display_marketplace())
 
-print()
-print(text_display_card(1001))
-print()
 
 print(coin_bank)
 game_loop()
