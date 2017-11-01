@@ -24,14 +24,35 @@
 # Created for Python 3.x
 
 import time
+from decimal import *
 
 
+def is_recurring(d):
+    """Looks at the fraction 1/d and returns True if its decimal representation is a recurring cycle"""
+    if d % 2 == 0 or d % 5 == 0:
+        return False
+    else:
+        return True
+
+
+def recurring_length(d):
+    """Looks at the fraction 1/d and returns the length of the recurring cycle."""
+    pass
 
 # ------------------------------------------------------------
 #  Main
 # ------------------------------------------------------------
 if __name__ == "__main__":
     start_time = time.time()
+
+    largest_recurring_length = 0
+    largest_d = 0
+    for d in range(2,1001):
+        if is_recurring(d):
+            r_length = recurring_length(d)
+            if r_length > largest_recurring_length:
+                largest_recurring_length = r_length
+                largest_d = d
 
 
     print("Completion time: {}".format(time.time()-start_time))
