@@ -24,6 +24,8 @@ red = (255,0,0)
 CARDS_PER_MARKETPLACE_ROW = 4
 NUMBER_OF_RESOURCES   = 6 # Default value. Altered when resource file is loaded (resources.json)
 NUM_CARD_POWER_LEVELS = 3 # Default value. Altered when resource file is loaded (resources.json)
+resource_info = {}
+
 b_DEBUG = True
 
 # Game State
@@ -64,33 +66,44 @@ def setup_load_card_catalogs():
     # Create Card Catalog of all cards in game
     with open('resources.json') as data_file:
         data = json.load(data_file)
+
+    global NUMBER_OF_RESOURCES
+    NUMBER_OF_RESOURCES = data["number_of_resources"]
+
+    global NUM_CARD_POWER_LEVELS
+    NUM_CARD_POWER_LEVELS = data["number_of_card_power_levels"]
+
+    global resource_info
+
+
     global card_catalog
     card_array = data["cards"]
     for card in card_array:
         card_catalog[card["id"]] = card
+
     # ToDo: Fix this function so that it loads from json.  Adds flexibility with resource # and type
 
-    with open('cards.csv') as card_csv_file:
-        reader = csv.reader(card_csv_file)
-        card_counter = [0, 0, 0]
-        for row in reader:
-            if len(row) == 8:
-                card_counter[int(row[0]) - 1] += 1
-                card = {
-                    "name": "no_name_given",
-                    "type": row[1],
-                    "level": row[0],
-                    "vp": row[2],
-                    "cost": {
-                        str(row[3].split(" Cost:")[0]): row[3].split(" Cost:")[1],
-                        str(row[4].split(" Cost:")[0]): row[4].split(" Cost:")[1],
-                        str(row[5].split(" Cost:")[0]): row[5].split(" Cost:")[1],
-                        str(row[6].split(" Cost:")[0]): row[6].split(" Cost:")[1],
-                        str(row[7].split(" Cost:")[0]): row[7].split(" Cost:")[1]
-                    }
-                }
-                card_catalog[int(row[0]) * 1000 + card_counter[int(row[0]) - 1]] = card
-    card_csv_file.close()
+    # with open('cards.csv') as card_csv_file:
+    #     reader = csv.reader(card_csv_file)
+    #     card_counter = [0, 0, 0]
+    #     for row in reader:
+    #         if len(row) == 8:
+    #             card_counter[int(row[0]) - 1] += 1
+    #             card = {
+    #                 "name": "no_name_given",
+    #                 "type": row[1],
+    #                 "level": row[0],
+    #                 "vp": row[2],
+    #                 "cost": {
+    #                     str(row[3].split(" Cost:")[0]): row[3].split(" Cost:")[1],
+    #                     str(row[4].split(" Cost:")[0]): row[4].split(" Cost:")[1],
+    #                     str(row[5].split(" Cost:")[0]): row[5].split(" Cost:")[1],
+    #                     str(row[6].split(" Cost:")[0]): row[6].split(" Cost:")[1],
+    #                     str(row[7].split(" Cost:")[0]): row[7].split(" Cost:")[1]
+    #                 }
+    #             }
+    #             card_catalog[int(row[0]) * 1000 + card_counter[int(row[0]) - 1]] = card
+    # card_csv_file.close()
 
     # Create Bonus Point Catalog
     with open('bonus.csv') as bonus_csv_file:
