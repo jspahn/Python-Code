@@ -30,23 +30,18 @@ b_DEBUG = True
 
 # Game State
 num_players = 2
+num_standard_resources = 5
 card_catalog = {}   # Used to hold all information regarding the playing cards
 bonus_catalog = {}  # Used to hold all information regarding bonus point cards
 card_decks = {}     # Cards decks based on their level (in base: 3 levels)
 bonus_options = []
-coin_bank = {
-    "Dark Matter" :0,
-    "Water" :0,
-    "Green" :0,
-    "Antimatter" :0,
-    "White" :0
-}
+coin_bank = {}
 marketplace = {}
 
 player_list = []
 
 gameDisplay = pygame.display.set_mode((display_width,display_height))
-pygame.display.set_caption("Race Game")
+pygame.display.set_caption("Resource Game")
 clock = pygame.time.Clock()
 
 
@@ -74,12 +69,17 @@ def setup_load_card_catalogs():
     NUM_CARD_POWER_LEVELS = data["number_of_card_power_levels"]
 
     global resource_info
+    resource_info = data["resources"]
+    num_standard_resources = 0
 
 
     global card_catalog
-    card_array = data["cards"]
-    for card in card_array:
+    temp_card_array = data["cards"]
+    for card in temp_card_array:
         card_catalog[card["id"]] = card
+
+    global bonus_catalog
+    bonus_catalog = data["bonus"]
 
     # ToDo: Fix this function so that it loads from json.  Adds flexibility with resource # and type
 
@@ -105,37 +105,36 @@ def setup_load_card_catalogs():
     #             card_catalog[int(row[0]) * 1000 + card_counter[int(row[0]) - 1]] = card
     # card_csv_file.close()
 
-    # Create Bonus Point Catalog
-    with open('bonus.csv') as bonus_csv_file:
-        reader = csv.reader(bonus_csv_file)
-        bonus_id = -1
-        for row in reader:
-            bonus_id += 1
-            if bonus_id != 0:
-                bonus = {
-                    "id": id,
-                    "name": row[0],
-                    "vp": row[1],
-                    "cost": {
-                        str(row[2].split(" Cost:")[0]): row[2].split(" Cost:")[1],
-                        str(row[3].split(" Cost:")[0]): row[3].split(" Cost:")[1],
-                        str(row[4].split(" Cost:")[0]): row[4].split(" Cost:")[1],
-                        str(row[5].split(" Cost:")[0]): row[5].split(" Cost:")[1],
-                        str(row[6].split(" Cost:")[0]): row[6].split(" Cost:")[1]
-                    }
-                }
-                bonus_catalog[bonus_id] = bonus
-    bonus_csv_file.close()
+    # # Create Bonus Point Catalog
+    # with open('bonus.csv') as bonus_csv_file:
+    #     reader = csv.reader(bonus_csv_file)
+    #     bonus_id = -1
+    #     for row in reader:
+    #         bonus_id += 1
+    #         if bonus_id != 0:
+    #             bonus = {
+    #                 "id": id,
+    #                 "name": row[0],
+    #                 "vp": row[1],
+    #                 "cost": {
+    #                     str(row[2].split(" Cost:")[0]): row[2].split(" Cost:")[1],
+    #                     str(row[3].split(" Cost:")[0]): row[3].split(" Cost:")[1],
+    #                     str(row[4].split(" Cost:")[0]): row[4].split(" Cost:")[1],
+    #                     str(row[5].split(" Cost:")[0]): row[5].split(" Cost:")[1],
+    #                     str(row[6].split(" Cost:")[0]): row[6].split(" Cost:")[1]
+    #                 }
+    #             }
+    #             bonus_catalog[bonus_id] = bonus
+    # bonus_csv_file.close()
 
 
 def setup_build_decks():
     # Create the card Decks based on card level
-    for id in card_catalog.keys():
-        if int(id) // 1000 in card_decks:
-            card_decks[int(id) // 1000].append(id)
-        else:
-            card_decks[int(id) // 1000] = []
-            card_decks[int(id) // 1000].append(id)
+
+    for id in card_catalog:
+        if card_catalog[id]["level"] not in card_decks:
+            card_decks[card_catalog[id]["level"]] = []
+        card_decks[card_catalog[id]["level"]].append(id)
     for level in card_decks.keys():
         random.shuffle(card_decks[level])
 
@@ -145,17 +144,20 @@ def setup_build_decks():
 
 def setup_coin_bank():
     # Set up the coin bank
-    if num_players == 2:
-        start_coin = 4
-    if num_players == 3:
-        start_coin = 5
-    if num_players == 4:
-        start_coin = 7
-    coin_bank["Dark Matter"] = start_coin
-    coin_bank["Water"] = start_coin
-    coin_bank["Green"] = start_coin
-    coin_bank["Antimatter"] = start_coin
-    coin_bank["White"] = 5
+    for coin in resource_info:
+        coin_bank[coin] = resource_info[coin]["starting_amount"][num_players-2]
+
+    # if num_players == 2:
+    #     start_coin = 4
+    # if num_players == 3:
+    #     start_coin = 5
+    # if num_players == 4:
+    #     start_coin = 7
+    # coin_bank["Dark Matter"] = start_coin
+    # coin_bank["Water"] = start_coin
+    # coin_bank["Green"] = start_coin
+    # coin_bank["Antimatter"] = start_coin
+    # coin_bank["White"] = 5
 
 
 def setup_player_creation():
@@ -253,15 +255,18 @@ def text_display_card(id):
     """Text based Display of the card"""
     text = {}
     text[0] = "+----------------+"
-    text[1] = "| {0}VP      {1} |".format(card_catalog[id]["vp"], card_catalog[id]["type"][:5])
+    text[1] = "| {0}VP        {1} |".format(card_catalog[id]["vp"], resource_info[card_catalog[id]["type"]]["short_name"])
     text[2] = "|                |"
     text[3] = "|          lvl {} |".format(card_catalog[id]["level"])
     text[4] = "|   COST         |"
-    text[5] = "| {} Dark Matter  |".format(card_catalog[id]["cost"]["Dark Matter"])
-    text[6] = "| {} Water        |".format(card_catalog[id]["cost"]["Water"])
-    text[7] = "| {} Green        |".format(card_catalog[id]["cost"]["Green"])
-    text[8] = "| {} Anti Matter  |".format(card_catalog[id]["cost"]["Antimatter"])
-    text[9] = "| {} White        |".format(card_catalog[id]["cost"]["White"])
+
+    for i in range(5, 10):
+        pass  # TODO
+    text[5] = "| {} Dark Matter  |".format(card_catalog[id]["cost"][0])
+    text[6] = "| {} Water        |".format(card_catalog[id]["cost"][1])
+    text[7] = "| {} Green        |".format(card_catalog[id]["cost"][2])
+    text[8] = "| {} Anti Matter  |".format(card_catalog[id]["cost"][3])
+    text[9] = "| {} White        |".format(card_catalog[id]["cost"][4])
     text[10] ="|         id{} |".format(id)
     text[11] = "+----------------+"
     return text
@@ -310,12 +315,12 @@ def game_loop():
 
 
 
-# game_setup(3)
-# print("Number of Players: {}".format(num_players))
-# print(text_display_marketplace())
-#
-#
-# print(coin_bank)
+game_setup(3)
+print("Number of Players: {}".format(num_players))
+print(text_display_marketplace())
+
+
+print(coin_bank)
 
 with open('resources.json') as data_file:
     data = json.load(data_file)
@@ -324,7 +329,7 @@ card_array = data["cards"]
 for card in card_array:
     card_catalog[card["id"]] = card
 
-pprint(card_catalog)
+# pprint(card_catalog)
 
 
 
