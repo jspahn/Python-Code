@@ -24,7 +24,6 @@
 # Created for Python 3.x
 
 import time
-from decimal import *
 
 
 def is_recurring(d):
@@ -57,6 +56,7 @@ def recurring_length(d):
         return 0
     pass
 
+
 # ------------------------------------------------------------
 #  Main
 # ------------------------------------------------------------
@@ -73,4 +73,8 @@ if __name__ == "__main__":
 
     print("The fraction 1/{} has the largest recurring cycle of {} repeating digits.".format(largest_d,largest_recurring_length))
     print("Completion time: {}".format(time.time()-start_time))
+
     # Output:
+    #     The fraction 1/983 has the largest recurring cycle of 982 repeating digits.
+    #     Completion time: 0.10865998268127441
+

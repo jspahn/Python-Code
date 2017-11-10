@@ -27,6 +27,19 @@
 import time
 
 
+def get_primes(n):
+    """Lists all primes from 2 to n (inclusive)
+            Uses Sieve of Erathosthenes Algorithm"""
+    l_primes = [2]
+    sieve = [True] * (n+1)
+    for i in range(3,n,2):
+        if sieve[i]:
+            l_primes.append(i)
+            for j in range(2,int(n/i)+1):
+                if i*j<=n:
+                    sieve[i*j] = False
+    return l_primes
+
 
 # ------------------------------------------------------------
 #  Main
@@ -34,6 +47,31 @@ import time
 if __name__ == "__main__":
     start_time = time.time()
 
+    primes = get_primes(1000)
+    solution = {
+        "max": 0,
+        "a":   0,
+        "b":   0
+    }
+
+    for b in primes:
+        for second_prime in primes:
+            a = second_prime - b - 1
+            n = 2
+            while (n**2 + a*n + b) in primes:
+                n = n+1
+            if solution["max"] < n:
+                solution["max"] = n
+                solution["a"] = a
+                solution["b"] = b
+
+    print("n^2 + {}n + {}".format(solution["a"], solution["b"]))
+    print("  creates the most primes: {}".format(solution["max"]))
+    print("a * b = {}".format(solution["a"] * solution["b"]))
 
     print("Completion time: {}".format(time.time()-start_time))
     # Output:
+    #     n^2 + -61n + 971
+    #       creates the most primes: 61
+    #     a * b = -59231
+    #     Completion time: 0.10309195518493652
