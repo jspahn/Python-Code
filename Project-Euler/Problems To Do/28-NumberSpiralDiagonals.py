@@ -20,6 +20,14 @@
 import time
 
 
+def new_circle(n):
+    """sums the corners of an nxn square
+    Assumes n is odd"""
+    if n == 1:
+        return 1
+    else:
+        return 4*(n-2)**2 + 10*(n-1)
+
 
 # ------------------------------------------------------------
 #  Main
@@ -27,6 +35,15 @@ import time
 if __name__ == "__main__":
     start_time = time.time()
 
+    diagonal_sum = 0
+    for n in range(1,1002,2):
+        diagonal_sum += new_circle(n)
 
+    print("The solution is {}".format(diagonal_sum))
     print("Completion time: {}".format(time.time()-start_time))
     # Output:
+    #     The solution is 669171001
+    #     Completion time: 0.00043010711669921875
+    #
+    #     Process finished with exit code 0
+
