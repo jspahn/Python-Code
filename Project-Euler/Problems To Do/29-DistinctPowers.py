@@ -28,6 +28,17 @@ import time
 if __name__ == "__main__":
     start_time = time.time()
 
+    sol = set()
+
+    for i in range(2,101):
+        for j in range(2,101):
+            sol.add(i**j)
+
+    print(len(sol))
+
 
     print("Completion time: {}".format(time.time()-start_time))
     # Output:
+    #     9183
+    #     Completion time: 0.008282899856567383
+
