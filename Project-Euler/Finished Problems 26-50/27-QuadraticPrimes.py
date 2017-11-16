@@ -13,7 +13,8 @@
 #     The product of the coefficients, -79 and 1601, is -126479.
 #
 #     Considering quadratics of the form:
-#           n^2 + an + b, |a| < 1000 and |b| <= 1000
+#           n^2 + an + b,
+#                   |a| < 1000 and |b| <= 1000
 #           where |n| is the modulus/absolute value of n
 #           e.g. |11| = 11 and |-4| = 4
 #
@@ -36,9 +37,26 @@ def get_primes(n):
         if sieve[i]:
             l_primes.append(i)
             for j in range(2,int(n/i)+1):
-                if i*j<=n:
+                if i*j <= n:
                     sieve[i*j] = False
     return l_primes
+
+
+def is_prime(n):
+    """Checks to see if i is a prime number"""
+    if n < 2:
+        return False
+    elif n == 2 or n == 3:
+        return True
+    elif n % 2 == 0 or n % 3 == 0:
+        return False
+    else:
+        i = 5
+        while i ** 2 <= n:
+            if n % i == 0 or n % (i+2) == 0:
+                return False
+            i += 6
+        return True
 
 
 # ------------------------------------------------------------
@@ -47,7 +65,19 @@ def get_primes(n):
 if __name__ == "__main__":
     start_time = time.time()
 
-    primes = get_primes(1000)
+    # Solution Technique:
+    #       We start with n = 0, making b the first prime.
+    #           Instead of testing -1000 < b < 1000 terms, we only need b = positive primes < 1000
+    #       The second prime in the sequence is b + a + 1
+    #           a must be odd
+    #           This also sets a lower limit: b + 1 +a >=2 or a >=  - b + 1
+    #               Since that is an even number, a >= -b + 2
+    #       Loop through all possible outcomes
+
+    max_boundary_a = 1000
+    max_boundary_b = 1000
+
+    primes = get_primes(max_boundary_b)
     solution = {
         "max": 0,
         "a":   0,
@@ -55,15 +85,17 @@ if __name__ == "__main__":
     }
 
     for b in primes:
-        for second_prime in primes:
-            a = second_prime - b - 1
-            n = 2
-            while (n**2 + a*n + b) in primes:
-                n = n+1
+        a = -b + 2
+        while a < max_boundary_a:
+            n = 1
+            b_chain_end = False
+            while is_prime(n**2 + a*n + b):
+                n += 1
             if solution["max"] < n:
                 solution["max"] = n
                 solution["a"] = a
                 solution["b"] = b
+            a += 2
 
     print("n^2 + {}n + {}".format(solution["a"], solution["b"]))
     print("  creates the most primes: {}".format(solution["max"]))
@@ -72,6 +104,6 @@ if __name__ == "__main__":
     print("Completion time: {}".format(time.time()-start_time))
     # Output:
     #     n^2 + -61n + 971
-    #       creates the most primes: 61
+    #       creates the most primes: 71
     #     a * b = -59231
     #     Completion time: 0.10309195518493652
