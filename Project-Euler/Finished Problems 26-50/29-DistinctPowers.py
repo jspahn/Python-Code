@@ -21,7 +21,6 @@
 import time
 
 
-
 # ------------------------------------------------------------
 #  Main
 # ------------------------------------------------------------
@@ -35,7 +34,6 @@ if __name__ == "__main__":
             sol.add(i**j)
 
     print(len(sol))
-
 
     print("Completion time: {}".format(time.time()-start_time))
     # Output:
