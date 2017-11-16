@@ -106,4 +106,4 @@ if __name__ == "__main__":
     #     n^2 + -61n + 971
     #       creates the most primes: 71
     #     a * b = -59231
-    #     Completion time: 0.10309195518493652
+    #     Completion time: 0.44942212104797363
