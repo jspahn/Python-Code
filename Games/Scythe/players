@@ -1,0 +1,268 @@
+
+"""
+========================================================================================================================
+Economy Boards
+========================================================================================================================
+"""
+econ_board_industrial = {
+    "play_order"  : 1,
+    "start_money" : 4,
+    "start_popularity" : 2,
+    "start_objectives" : 2,
+    "top_order" : ["Bolster", "Produce", "Move/Gain", "Trade"],
+    "bottom_cost" : [3,3,3,4],
+    "bottom_discounts" : [1,2,1,2],
+    "bottom_coins" : [3,2,1,0]
+}
+
+econ_board_engineering = {
+    "play_order"  : 2,
+    "start_money" : 5,
+    "start_popularity" : 2,
+    "start_objectives" : 2,
+    "top_order" : ["Produce", "Trade", "Bolster", "Move/Gain"],
+    "bottom_cost" : [3,4,3,3],
+    "bottom_discounts" : [1,2,2,1],
+    "bottom_coins" : [2,0,3,1]
+}
+
+econ_board_militant = {
+    "play_order"  : 2.1,
+    "start_money" : 4,
+    "start_popularity" : 3,
+    "start_objectives" : 2,
+    "top_order" : ["Bolster", "Move/Gain","Produce", "Trade"],
+    "bottom_cost" : [3,3,4,3],
+    "bottom_discounts" : [2,1,1,2],
+    "bottom_coins" : [0,3,1,2]
+}
+
+econ_board_patriotic = {
+    "play_order"  : 3,
+    "start_money" : 6,
+    "start_popularity" : 2,
+    "start_objectives" : 2,
+    "top_order" : ["Move/Gain", "Bolster", "Trade", "Produce"],
+    "bottom_cost" : [2,4,4,3],
+    "bottom_discounts" : [0,3,2,1],
+    "bottom_coins" : [1,3,0,2]
+}
+
+econ_board_innovative = {
+    "play_order"  : 3.1,
+    "start_money" : 5,
+    "start_popularity" : 3,
+    "start_objectives" : 2,
+    "top_order" : ["Trade", "Produce", "Bolster", "Move/Gain"],
+    "bottom_cost" : [3,3,4,3],
+    "bottom_discounts" : [0,1,3,2],
+    "bottom_coins" : [3,1,2,0]
+}
+
+econ_board_mechanical = {
+    "play_order"  : 4,
+    "start_money" : 6,
+    "start_popularity" : 3,
+    "start_objectives" : 2,
+    "top_order" : ["Trade", "Bolster", "Move/Gain", "Produce"],
+    "bottom_cost" : [3,3,3,4],
+    "bottom_discounts" : [1,2,1,2],
+    "bottom_coins" : [0,2,2,2]
+}
+
+econ_board_agricultural = {
+    "play_order"  : 5,
+    "start_money" : 7,
+    "start_popularity" : 4,
+    "start_objectives" : 2,
+    "top_order" : ["Move/Gain", "Trade", "Produce", "Bolster"],
+    "bottom_cost" : [2,4,4,3],
+    "bottom_discounts" : [0,2,2,2],
+    "bottom_coins" : [1,0,2,3]
+}
+
+
+"""
+========================================================================================================================
+    The Saxony Empire   -  Gunter, Nacht & Tag
+        Black Team
+========================================================================================================================
+"""
+faction_card_black = {
+    "faction_name" : "Saxony Empire",
+    "character_name" : "Gunter, Nacht & Tag",
+    "faction_color" : "black",
+    "start_power"   : 1,
+    "start_combat_cards" : 4,
+    "faction_ability": {"name" : "Dominate",
+                            "description_short" : "There is no limit to the number of stars you can place from"
+                                        " completing objectives and winning combat.",
+                            "description_long" : "Saxony's methodical approach to conquering the eastern lands"
+                                        " surrounding the Factory is all about asserting force and completing specific"
+                                        " missions. The Saxon faction may complete both of their objective cards"
+                                        " (they don't discard the second card after achieving the first), and they"
+                                        " are not limited to 2 combat victory stars.  If Saxony has available"
+                                        " stars, after winning combat, they must place the star."
+                        },
+    "mech_abilities" : [{"name" : "Riverwalk", "location" : ["Forest","Mountain"],
+                            "description_short" : "move across rivers to forests and mountains",
+                            "description_long"  : "Your character and mechs can move across rivers onto forests and"
+                                        " mountains",
+                            "active": False},
+                        {"name" : "Underpass",
+                            "description_short" : "move between any mountain you control and any tunnel",
+                            "description_long"  : "For the purposes of Move actions for your character and mechs,"
+                                        " mountains you control and all tunnels are considered to be adjacent to each"
+                                        " other. For example, if your mech is on a mountain, it can move from that"
+                                        " mountain to (a) any other mountain you control or (b) any tunnel (or your"
+                                        " Mine).",
+                            "active" : False},
+                        {"name" : "Disarm",
+                            "description_short" : "before combat on a territory with a tunnel, opponent gets -2 Power",
+                            "description_long"  : "Before you engage in combat on a territory with a tunnel or your"
+                                        " Mine, the combating opponent loses 2 power. This loss of power is reflected"
+                                        " on the Power Track.  You may do this once per combat, not once per unit.",
+                            "active" : False},
+                        {"name" : "Speed",
+                            "description_short" : "+1 hex per movement",
+                            "description_long"  : "Your character and mechs may move one additional territory per Move"
+                                        " action. If any of those units move into a territory containning an opponent's"
+                                        " character, mech, or worker, their movement ends and they cannot move again"
+                                        " this turn. Moving from one tunnel to another still counts as 1 move, so with"
+                                        " this ability you could move an additional territory before or after moving"
+                                        " through a tunnel. Your mechs can pick up and drop off resources and workers"
+                                        " in the middle of a Move action when they have the Speed ability.",
+                            "active" : False}
+                        ],
+    "character_flavor" : "Gunter Von Duisburg With Nacht & Tag (Saxony Empire): During the war, Gunter and his wolves"
+                         " led elite mechs squads across the forests and mountains of Saxony and Europa. His name was"
+                         " both feared and respected, and his jacket grew heavy with medals of honor. Now that the war"
+                         " is over, the Emperor has asked Gunter to embark on a new adventure to the east, where he"
+                         " sees a fresh opportunity to expand the Saxony foothold on the unclaimed lands surrounding"
+                         " the Factory. Tag is shown on several encounter cards, but she is not part of the character"
+                         " miniature."
+
+}
+
+"""
+========================================================================================================================
+    The Rusviet Union   -  Olga & Changa
+        Red Team
+========================================================================================================================
+"""
+faction_card_red = {
+    "faction_name" : "Rusviet Union",
+    "character_name" : "Olga & Changa",
+    "faction_color" : "red",
+    "start_power"   : 3,
+    "start_combat_cards" : 2,
+    "faction_ability": {"name" : "Relentless",
+                        "description_short" : "You many choose the same section on your Player Mat as your previous turns.",
+                        "description_long" : ""
+                        },
+    "mech_abilities" : [{"name" : "Riverwalk", "location" : ["Farm","Village"],
+                            "description_short" : "move across rivers to Farms and Village",
+                            "description_long"  : "Your character and mechs can move across rivers onto Farms and Villages.",
+                            "active": False},
+                        {"name" : "Township",
+                            "description_short" : "move between any village you control and the Factory",
+                            "description_long"  : "For the purposes of Move actions for your Character and Mechs,"
+                                        " Villages you control and the Factory are considered to be adjacent to each"
+                                        " other. For example, if your Mech is on a village, it can move from that"
+                                        " village to (a) any other village you control or (b) the Factory.",
+                            "active" : False},
+                        {"name" : "People's Army",
+                            "description_short" : "in combat where you have at least 1 worker, you may play +1 Combat"
+                                        " Card",
+                            "description_long"  : "In combat where you have at least 1 worker, you may play on"
+                                        " additional combat card. You still require a character or mech to participate"
+                                        " in combat. For example, if you have 2 Mechs and 3 Workers in combat, you may"
+                                        " play up to 3 Combat Cards (1 for each of the mechs and 1 because you have at"
+                                        " least 1 worker).",
+                            "active" : False},
+                        {"name" : "Speed",
+                            "description_short" : "+1 hex per movement",
+                            "description_long"  : "Your character and mechs may move one additional territory per Move"
+                                        " action. If any of those units move into a territory containning an opponent's"
+                                        " character, mech, or worker, their movement ends and they cannot move again"
+                                        " this turn. Moving from one tunnel to another still counts as 1 move, so with"
+                                        " this ability you could move an additional territory before or after moving"
+                                        " through a tunnel. Your mechs can pick up and drop off resources and workers"
+                                        " in the middle of a Move action when they have the Speed ability.",
+                            "active" : False}
+                        ],
+    "character_flavor" : "Olga Romanova & Changa (Rusviet Union): When Olga's first love, Viktor, went missing during"
+                         " the Great War, she vowed to find him again. She joined the Rusviet military intelligence"
+                         " service with Changa, her Siberian tiger, at her side.  With her intelligence and ambition,"
+                         " she has risen quickly through the ranks, and has used her newly-earned authority to launch a"
+                         " full-blown invasion into the western lands-a desperate attempt to find her beloved Viktor,"
+                         " with the full strength of the Rusviet millitary behind her back!"
+
+}
+
+"""
+========================================================================================================================
+    The Nordic Kingdom   -  Bjorn & Mox
+        Blue Team
+========================================================================================================================
+"""
+faction_card_blue = {
+    "faction_name" : "Nordic Kingdoms",
+    "character_name" : "Bjorn & Mox",
+    "faction_color" : "blue",
+    "start_power"   : 4,
+    "start_combat_cards" : 1,
+    "faction_ability": {"name" : "Swim",
+                            "description_short" : "Your Workers may move across rivers.",
+                            "description_long" : "Nordic workers are accomplished swimmers who refuse to complain even"
+                                        " when wading through the coldest of waters. They may move across rivers onto"
+                                        " any type of terrain (except lakes). This abiliy applies only to workers, not"
+                                        " the Character and Mechs."
+                        },
+    "mech_abilities" : [{"name" : "Riverwalk", "location" : ["Forest","Mountain"],
+                            "description_short" : "move across rivers to Forests and Mountains",
+                            "description_long"  : "Your character and mechs can move across rivers onto Forests and"
+                                        " Mountains",
+                            "active": False},
+                        {"name" : "Seaworthy",
+                            "description_short" : "move to/from lakes and retreat onto adjacent lakes.",
+                            "description_long"  : "Your character and mechs can move to and from lakes and retreat onto"
+                                        " adjacent lakes (you may still also retreat those units to your home base)."
+                                        " This allows for lake hexes to be treated the same as other territories for"
+                                        " movement. If a mech transports workers onto a lake (during a Move action or"
+                                        " when retreating) or if a character or mach transports resources onto a lake,"
+                                        " you may not leave those workers or resources on the lake after moving off of"
+                                        " it, nor may a worker move off of the lake without the assistance of the Mech."
+                                        " Lakes are territories, so if two factions have a lake movement ability, it's"
+                                        " possible for combat to happen on a lake. You cannot build a structure or"
+                                        " deploy a Mech on a lake."
+                                        ,
+                            "active" : False},
+                        {"name" : "Artillery",
+                            "description_short" : "before combat, if you pay 1 Power, opponent gets -2 Power",
+                            "description_long"  : "Before you engage in combat, you may pay 1 power to force the"
+                                        " combating opponent to lose 2 power. This los of power is reflected on the"
+                                        " Power Track. You may do this once per combat, not once per unit.",
+                            "active" : False},
+                        {"name" : "Speed",
+                            "description_short" : "+1 hex per movement",
+                            "description_long"  : "Your character and mechs may move one additional territory per Move"
+                                        " action. If any of those units move into a territory containning an opponent's"
+                                        " character, mech, or worker, their movement ends and they cannot move again"
+                                        " this turn. Moving from one tunnel to another still counts as 1 move, so with"
+                                        " this ability you could move an additional territory before or after moving"
+                                        " through a tunnel. Your mechs can pick up and drop off resources and workers"
+                                        " in the middle of a Move action when they have the Speed ability.",
+                            "active" : False}
+                        ],
+    "character_flavor" : "Bjorn & Mox (Nordic Kingdom): Bjorn, the descendant of a renowned Viking family, was saved"
+                         " from perishing in a blizzard by a kindly muskox. After surviving the ordeal, Bjorn took the"
+                         " creature as his mount and named him Mox. Together they embarked on a series of adventures"
+                         " across the land, serving as ambassadors to other tribes, executing military operations, and"
+                         " seeking out new oil reserves. The King has now sent them southward to add new villages and"
+                         " farms to the kingdom, either by diplomacy or by force, as well as to explore the Factory"
+                         " with the hope of gaining a technological advantage for future wars."
+
+}
+
+print(faction_card_blue["mech_abilities"][0]["name"])
