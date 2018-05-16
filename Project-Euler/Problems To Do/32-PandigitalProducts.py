@@ -21,6 +21,7 @@ import math
 
 
 def num_of_digits(test_number):
+    """Finds the number of digits in the test_number (log base 10 of number + 1)"""
     return int(math.log(test_number,10))+1
 
 
